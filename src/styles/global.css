@@ -4,3 +4,8 @@
   -webkit-text-stroke: 1.5px white; /* Border thickness and color */
   color: transparent; /* Makes the fill transparent */
 }
+
+.vertical-text-outline {
+  -webkit-text-stroke: 1.5px rgb(72, 97, 248); /* Border thickness and color */
+  color: transparent; /* Makes the fill transparent */
+}

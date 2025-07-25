@@ -2,7 +2,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
-import "../../styles/style.css"; // your flip card styles
 
 const images = [
   {
@@ -18,8 +17,12 @@ const images = [
     alt: "Collaboration",
   },
   {
-    src: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80",
-    alt: "Strategy Planning",
+    src: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1920&q=80",
+    alt: "Creative Team",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1531379410502-63bfe8cdaf6e?auto=format&fit=crop&w=1920&q=80",
+    alt: "Planning",
   },
 ];
 
@@ -34,12 +37,13 @@ export default function ImageSlider() {
             delay: 3000,
             disableOnInteraction: false,
           }}
-          spaceBetween={30}
+          spaceBetween={20}
           breakpoints={{
             0: { slidesPerView: 2 },
             640: { slidesPerView: 3 },
-            1024: { slidesPerView: 5 },
+            1024: { slidesPerView: 3 },
           }}
+          className="w-full"
         >
           {images.map((img, index) => (
             <SwiperSlide key={index}>

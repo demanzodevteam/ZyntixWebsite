@@ -1,90 +1,174 @@
 ---
+import Slack from '../../../../assets/slack.png'
+import Messanger from '../../../../assets/messenger.png'
+import Skype from '../../../../assets/skype.png'
+import Tel from '../../../../assets/telegram.png'
+import Discord from '../../../../assets/discord.png'
 
 ---
 
-<section class="w-full px-4 py-16 bg-white text-black space-y-6">
-  <div class="max-w-7xl mx-auto">
-    <p class="text-sm uppercase tracking-wide font-bold text-gray-500 mb-2">
-      Modern Solutions
-    </p>
-    
-    <h2 class="text-4xl md:text-4xl font-bold leading-tight mt-4">
-      Weaving Success through <br />
-      Strategic Services
+<!--------- Section 2 ------->
+
+<section class="max-w-7xl mx-auto font-sans ">
+  <div class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1fr_1fr_0.7fr] gap-4 py-6">
+      <!-- Left Panel -->
+  <div class="bg-[#3ec4d6] rounded-xl flex flex-col justify-between p-6 md:p-10 relative overflow-hidden text-white">
+    <!-- TOP-RIGHT TAGS -->
+    <div class="absolute top-6 right-6 flex flex-wrap gap-2">
+      <span class="bg-white text-black text-[13px] font-medium py-1 px-3 rounded-full select-none cursor-pointer">AI Solutions</span>
+      <span class="bg-white text-black text-[13px] font-medium py-1 px-3 rounded-full select-none cursor-pointer">AI Services</span>
+    </div>
+
+    <!-- HEADING -->
+    <h2 class="text-3xl sm:text-4xl font-semibold max-w-[13ch] mt-6">
+      Built for Businesses Ready to Scale, Not Settle
     </h2>
+
+    <!-- EXPLORE MORE LINK -->
+    <div class="mt-2 inline-flex items-center gap-2 text-sm font-medium text-white border-b-2 border-white w-max pb-0.5 hover:text-gray-200 transition-colors">
+      <span>Explore more</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="lucide lucide-arrow-up-right">
+        <path d="M7 7h10v10" />
+        <path d="M7 17L17 7" />
+      </svg>
+    </div>
+
+    <!-- ARROW BUTTON -->
+    <button aria-label="Go next"
+      class="absolute bottom-4 right-6 md:right-4 bg-black bg-opacity-80 hover:bg-opacity-95 text-white rounded-full w-10 h-10 flex items-center justify-center transition-colors">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="lucide lucide-arrow-up-right">
+        <path d="M7 7h10v10" />
+        <path d="M7 17L17 7" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Middle Panel -->
+  <div class="bg-[#8b9ce4] rounded-xl flex flex-col justify-between p-6 md:p-10 relative overflow-hidden text-white min-h-[320px]">
+    <div class="absolute top-6 right-6 flex flex-wrap gap-2">
+      <button aria-label="Go next"
+      class=" bg-white bg-opacity-80 hover:bg-opacity-95 text-black rounded-full w-10 h-10 flex items-center justify-center transition-colors">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="lucide lucide-arrow-up-right">
+        <path d="M7 7h10v10" />
+        <path d="M7 17L17 7" />
+      </svg>
+    </button>
+    </div>
+    <h3 class="text-lg md:text-2xl font-semibold leading-snug max-w-[20ch] mb-2">
+      Most off-the-shelf solutions aren’t designed to evolve with your business
+    </h3>
+    <p class="text-sm md:text-base max-w-[35ch]">
+      They limit innovation and create technical debt
+    </p>
+   <div class="text-[60px] font-extrabold leading-none self-start max-w-max opacity-80 text-outline">
+  20k+
+</div>
+
+    <span
+      class="absolute left-[190px] bottom-[50px] rotate-[-90deg] text-md font-bold text-white ">
+      live users
+    </span>
+
+    <!-- Circular arrow button -->
+    <button aria-label="Go next"
+      class="absolute bottom-4 right-6 md:right-4 bg-black bg-opacity-80 hover:bg-opacity-95 text-white rounded-full w-10 h-10 flex items-center justify-center transition-colors">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="lucide lucide-arrow-up-right">
+        <path d="M7 7h10v10" />
+        <path d="M7 17L17 7" />
+      </svg>
+    </button>
+
     
-    <hr class="mt-8 w-full border-t-3 border-gray-400 rounded-full" />
-  </div>
-    <div class="max-w-7xl mx-auto space-y-6 px-4">
- <div class="w-full space-y-6">
-  <!-- Row 1 -->
-  <div>
-    <div class="grid grid-cols-1 md:grid-cols-[90px_400px_1fr_auto] gap-4 items-start py-2">
-      <span class="text-3xl font-bold text-gray-600">01</span>
-      <h3 class="text-2xl font-bold text-gray-800 text-left">Website Development</h3>
-      <p class="text-gray-600 text-sm max-w-[500px]">Fast, SEO-friendly websites with clean code and high conversion intent.</p>
-      <a href="#" class="text-gray-600 hover:text-blue-800 text-xl font-bold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-arrow-right-icon lucide-circle-arrow-right"><circle cx="12" cy="12" r="10"/><path d="m12 16 4-4-4-4"/><path d="M8 12h8"/></svg></a>
-    </div>
-    <hr class="mt-4 border-gray-300" />
   </div>
 
-  <!-- Row 2 -->
-  <div>
-    <div class="grid grid-cols-1 md:grid-cols-[90px_400px_1fr_auto] gap-4 items-start py-2">
-      <span class="text-3xl font-bold text-gray-600">02</span>
-      <h3 class="text-2xl font-bold text-gray-800 text-left">Mobile App Development</h3>
-      <p class="text-gray-600 text-sm max-w-[500px]">Cross-platform mobile apps built using Flutter and React Native.</p>
-      <a href="#" class="text-gray-600 hover:text-blue-800 text-xl font-bold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-arrow-right-icon lucide-circle-arrow-right"><circle cx="12" cy="12" r="10"/><path d="m12 16 4-4-4-4"/><path d="M8 12h8"/></svg></a>
+  <!-- Right Panel -->
+  <div class="bg-[#8a79e0] rounded-xl flex flex-col justify-between p-6 md:p-10 relative overflow-hidden text-white min-h-[320px]">
+    <h3 class="text-lg md:text-xl font-semibold leading-snug  mb-6">
+      At Zyntics, we design and develop systems that grow with you—no template traps, no bloated plugins. 
+    </h3>
+    <p class="text-sm md:text-base max-w-[24ch] mb-12">
+      Instant assistance for all your queries. Experience seamless service with our AI-powered support
+    </p>
+    <div class="flex items-center space-x-2 opacity-50 mb-10">
+      <svg class="w-6 h-6 stroke-current" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+        viewBox="0 0 24 24">
+        <path d="M12 22a10 10 0 1 0-10-10 10 10 0 0 0 10 10zm-1-6h2v-6h-2zm0-8h2v2h-2z" />
+      </svg>
+      <span class="text-sm tracking-wide select-none">24/7</span>
     </div>
-    <hr class="mt-4 border-gray-300" />
+
+    <!-- Dot pattern -->
+    <svg class="absolute top-6 right-6 w-12 h-16 opacity-25 pointer-events-none" xmlns="http://www.w3.org/2000/svg"
+      fill="none" viewBox="0 0 20 28">
+      <circle cx="2" cy="2" r="2" fill="white" />
+      <circle cx="10" cy="2" r="2" fill="white" />
+      <circle cx="18" cy="2" r="2" fill="white" />
+      <circle cx="2" cy="10" r="2" fill="white" />
+      <circle cx="10" cy="10" r="2" fill="white" />
+      <circle cx="18" cy="10" r="2" fill="white" />
+      <circle cx="2" cy="18" r="2" fill="white" />
+      <circle cx="10" cy="18" r="2" fill="white" />
+      <circle cx="18" cy="18" r="2" fill="white" />
+      <circle cx="2" cy="26" r="2" fill="white" />
+      <circle cx="10" cy="26" r="2" fill="white" />
+      <circle cx="18" cy="26" r="2" fill="white" />
+    </svg>
+  </div>
+  </div>
+  <div class="relative grid grid-cols-1 md:grid-cols-2 gap-10 items-end bg-[#1F1F1F] text-white px-10 py-7 rounded-xl">
+  <!-- Left Side: End-Aligned Heading -->
+  <div>
+    <h2 class="text-3xl md:text-4xl font-normal leading-tight">
+      We work and integrate<br />with this services
+    </h2>
   </div>
 
-  <!-- Row 3 -->
-  <div>
-    <div class="grid grid-cols-1 md:grid-cols-[90px_400px_1fr_auto] gap-4 items-start py-2">
-      <span class="text-3xl font-bold text-gray-600">03</span>
-      <h3 class="text-2xl font-bold text-gray-800 text-left">E-commerce Development</h3>
-      <p class="text-gray-600 text-sm max-w-[500px]">Custom storefronts, marketplaces, and headless commerce platforms.</p>
-      <a href="#" class="text-gray-600 hover:text-blue-800 text-xl font-bold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-arrow-right-icon lucide-circle-arrow-right"><circle cx="12" cy="12" r="10"/><path d="m12 16 4-4-4-4"/><path d="M8 12h8"/></svg></a>
+  <!-- Right Side: App Logos with Names -->
+  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 justify-items-center text-center">
+    <!-- App 1 -->
+    <div>
+      <img src={Slack.src} alt="App 1" class="mx-auto w-10 h-10 object-cover" />
+      <h4 class="text-sm mt-2 font-medium">Stack</h4>
     </div>
-    <hr class="mt-4 border-gray-300" />
+
+    <!-- App 2 -->
+    <div>
+      <img src={Messanger.src} alt="App 1" class="mx-auto w-10 h-10 object-cover" />
+      <h4 class="text-sm mt-2 font-medium">Messanger</h4>
+    </div>
+
+    <!-- App 3 -->
+    <div>
+      <img src={Tel.src} alt="App 1" class="mx-auto w-10 h-10 object-cover" />
+      <h4 class="text-sm mt-2 font-medium">Skype</h4>
+    </div>
+
+    <!-- App 4 -->
+    <div>
+      <img src={Discord.src} alt="App 1" class="mx-auto w-10 h-10 object-cover" />
+      <h4 class="text-sm mt-2 font-medium">Telegram</h4>
+    </div>
+
+    <!-- App 5 -->
+    <div>
+      <img src={Slack.src} alt="App 1" class="mx-auto w-10 h-10 object-cover" />
+      <h4 class="text-sm mt-2 font-medium">Discord</h4>
+    </div>
   </div>
 
-  <!-- Row 4 -->
-  <div>
-    <div class="grid grid-cols-1 md:grid-cols-[90px_400px_1fr_auto] gap-4 items-start py-2">
-      <span class="text-3xl font-bold text-gray-600">04</span>
-      <h3 class="text-2xl font-bold text-gray-800 text-left">Enterprise Solutions</h3>
-      <p class="text-gray-600 text-sm max-w-[500px]">Secure portals, dashboards, APIs, and workflow tools for internal operations.</p>
-      <a href="#" class="text-gray-600 hover:text-blue-800 text-xl font-bold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-arrow-right-icon lucide-circle-arrow-right"><circle cx="12" cy="12" r="10"/><path d="m12 16 4-4-4-4"/><path d="M8 12h8"/></svg></a>
-    </div>
-    <hr class="mt-4 border-gray-300" />
-  </div>
-
-  <!-- Row 5 -->
-  <div>
-    <div class="grid grid-cols-1 md:grid-cols-[90px_400px_1fr_auto] gap-4 items-start py-2">
-      <span class="text-3xl font-bold text-gray-600">05</span>
-      <h3 class="text-2xl font-bold text-gray-800 text-left">AI & ML Solutions</h3>
-      <p class="text-gray-600 text-sm max-w-[500px]">Predictive analytics, automation tools, and decision-making engines.</p>
-      <a href="#" class="text-gray-600 hover:text-blue-800 text-xl font-bold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-arrow-right-icon lucide-circle-arrow-right"><circle cx="12" cy="12" r="10"/><path d="m12 16 4-4-4-4"/><path d="M8 12h8"/></svg></a>
-    </div>
-    <hr class="mt-4 border-gray-300" />
-  </div>
-
-  <!-- Row 6 -->
-  <div>
-    <div class="grid grid-cols-1 md:grid-cols-[90px_400px_1fr_auto] gap-4 items-start py-2">
-      <span class="text-3xl font-bold text-gray-600">06</span>
-      <h3 class="text-2xl font-bold text-gray-800 text-left">Hire Developers</h3>
-      <p class="text-gray-600 text-sm max-w-[500px]">Scale your team with remote specialists in frontend, backend, AI/ML, mobile, or full-stack.</p>
-      <a href="#" class="text-gray-600 hover:text-blue-800 text-xl font-bold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-arrow-right-icon lucide-circle-arrow-right"><circle cx="12" cy="12" r="10"/><path d="m12 16 4-4-4-4"/><path d="M8 12h8"/></svg></a>
-    </div>
-    <hr class="mt-4 border-gray-300" />
+  <!-- 🔵 Small Up Arrow Box -->
+  <div class="absolute -bottom-1 -right-2 bg-[#45D0BD] text-black p-2 rounded-md shadow-md">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-up-icon lucide-chevron-up"><path d="m18 15-6-6-6 6"/></svg>
   </div>
 </div>
 
-    </div>
-
-
 </section>
+

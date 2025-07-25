@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+.text-outline {
+  -webkit-text-stroke: 1.5px white; /* Border thickness and color */
+  color: transparent; /* Makes the fill transparent */
+}

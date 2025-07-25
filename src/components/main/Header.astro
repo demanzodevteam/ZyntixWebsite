@@ -1,0 +1,104 @@
+---
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Tailwind Navbar</title>
+  </head>
+  <body class="bg-white text-black">
+    <nav class="w-full bg-white ">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:py-3">
+        <div class="flex items-center justify-between h-16">
+          <!-- Left: Logo -->
+          <div class="flex-shrink-0">
+            <a href="#" class="text-xl font-bold">MyLogo</a>
+          </div>
+
+          <!-- Center: Nav Links (Hidden on small screens) -->
+          <div class="hidden md:flex space-x-6">
+            <a href="#" class="font-medium hover:underline hover:underline-offset-4 hover:decoration-black">Home</a>
+            <a href="#" class="font-medium hover:underline hover:underline-offset-4 hover:decoration-black">Pages</a>
+            <a href="#" class="font-medium hover:underline hover:underline-offset-4 hover:decoration-black">Portfolio</a>
+            <a href="#" class="font-medium hover:underline hover:underline-offset-4 hover:decoration-black">Blog</a>
+            <a href="#" class="font-medium hover:underline hover:underline-offset-4 hover:decoration-black">Shop</a>
+          </div>
+
+          <!-- Right: Icons and Button -->
+          <div class="hidden md:flex items-center space-x-4">
+            <!-- Icons (use Heroicons or placeholders) -->
+            <button class="hover:text-blue-600">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clipboard-icon lucide-clipboard"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/></svg>
+            </button>
+            <button class="hover:text-blue-600">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+            </button>
+            <a
+              href="#"
+              class="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-all duration-200"
+            >
+              Get Started
+            </a>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="md:hidden flex items-center">
+            <button id="mobile-menu-button" class="text-black focus:outline-none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu (hidden by default) -->
+      <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
+        <a href="#" class="block hover:text-blue-600">Home</a>
+        <a href="#" class="block hover:text-blue-600">Pages</a>
+        <a href="#" class="block hover:text-blue-600">Portfolio</a>
+        <a href="#" class="block hover:text-blue-600">Blog</a>
+        <a href="#" class="block hover:text-blue-600">Shop</a>
+        <div class="flex items-center space-x-4 mt-4">
+          <button class="hover:text-blue-600">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clipboard-icon lucide-clipboard"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/></svg>
+
+          </button>
+          <button class="hover:text-blue-600">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+
+          </button>
+          <a
+            href="#"
+            class="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-all duration-200"
+          >
+            Get Started
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <script>
+      const button = document.getElementById("mobile-menu-button");
+      const menu = document.getElementById("mobile-menu");
+
+      if (button) {
+        button.addEventListener("click", () => {
+          if (menu) {
+            menu.classList.toggle("hidden");
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

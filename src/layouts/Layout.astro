@@ -1,0 +1,24 @@
+---
+import Header from "../components/main/Header.astro"
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+		<meta name="generator" content={Astro.generator} />
+		<title>Zyntics</title>
+	</head>
+	<body>
+
+		<!-- Nav Links -->
+		<Header />
+		<slot />
+	</body>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</html>
+

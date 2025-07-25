@@ -1,0 +1,200 @@
+---
+import ContactSection from "../../../common/ContactSection";
+import MapEmbed from "../../../common/MapEmbed.jsx";
+import ContactForm from "../../../common/ContactForm.jsx";
+---
+<section class="w-full px-4 py-10 bg-white space-y-10">
+  <!-- Grid: Both Images -->
+ <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_2fr] items-start gap-8">
+  
+  <!-- Left Side - Small Image Only aligned to top -->
+  <div class="flex items-start">
+    <img 
+      src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=300&q=80" 
+      alt="Strategy Planning" 
+      class="object-cover rounded-lg shadow-md w-full "
+    />
+  </div>
+
+  <!-- Right Side - Big Image Only -->
+  <div>
+    <img 
+      src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80" 
+      alt="Teamwork Collaboration" 
+      class="w-full h-auto object-cover rounded-xl shadow-lg"
+    />
+  </div>
+</div>
+
+
+  <!-- Grid: Text Section (Reusing same 1fr_2fr layout) -->
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_2fr] items-start gap-8">
+    
+    <!-- Left Side - Heading + Paragraph -->
+    <div>
+      <p class="text-sm uppercase tracking-wide font-bold text-gray-500">Unique Strategies</p>
+      <h2 class="text-4xl md:text-4xl font-bold leading-tight mt-4">Business <br> growth</h2>
+    </div>
+
+    <!-- Right Side - Two Column HR + Paragraphs -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Column 1 -->
+      <div class="px-4">
+        <hr class=" mb-6 w-full border-t-3 border-gray-400 rounded-full" />
+        <p class="text-gray-700 text-sm">
+          Our strategies are tailored to meet unique business needs with a focus on long-term scalability. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nulla voluptas doloremque porro possimus excepturi recusandae molestias harum delectus earum?
+        </p>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="px-4">
+        <hr class="mb-6 w-full border-t-3 border-gray-400 rounded-full" />
+        <p class="text-gray-700 text-sm">
+          We ensure performance and responsive interfaces across all digital platforms. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita dolores facilis voluptatibus dolore aut fuga beatae quos, reprehenderit porro autem?
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="relative w-full h-[60vh] md:h-[60vh] overflow-hidden">
+  <!-- Background Image -->
+  <img 
+    src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80" 
+    alt="Nature Advice Background"
+    class="w-full h-full object-cover"
+  />
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/40"></div>
+
+  <!-- Centered Text -->
+  <div class="absolute inset-0 flex items-center justify-center">
+    <h2 class="text-white text-4xl md:text-6xl font-bold">Advice</h2>
+  </div>
+</section>
+
+
+<section class="w-full px-4 py-16 bg-[#F6F6F6] text-center ">
+  <div class="max-w-7xl mx-auto">
+    
+    <!-- Top Paragraph -->
+    <p class="text-sm uppercase tracking-wide font-bold text-gray-500 mb-2">
+      What we do
+    </p>
+
+    <!-- Main Heading -->
+    <h1 class="mt-4">
+      <span class="text-4xl md:text-5xl font-bold leading-tight">Enchancing Strategies,nurturing <br>growth,orchestrating the pathway <br>for your </span>
+      <span class="text-4xl md:text-4xl font-semibold leading-tight"> <i> thriving business</i></span> 
+    </h1>
+
+    <!-- Subtitle -->
+    <h6 class="text-lg font-bold mt-6">
+      Peter Bowman
+    </h6>
+    <p class="text-base text-gray-600 ">
+      Creative Director
+    </p>
+
+  </div>
+
+   <!-- Cards Section -->
+  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row flex-wrap gap-8 justify-start mt-[120px]">
+    
+    <!-- Card 1 -->
+    <div class="bg-white p-6 w-full sm:w-72 h-72 flex items-center justify-center">
+      <img 
+        src="https://source.unsplash.com/200x200/?growth,chart" 
+        alt="Growth Chart" 
+        class="w-24 h-24 object-cover rounded-full"
+      />
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-white p-6 w-full sm:w-72 h-72 flex items-center justify-center ">
+      <img 
+        src="https://source.unsplash.com/200x200/?teamwork" 
+        alt="Teamwork" 
+        class="w-24 h-24 object-cover rounded-full"
+      />
+    </div>
+  </div>
+</section>
+
+
+<!-- <ContactSection client:load /> -->
+<section class="w-full grid grid-cols-1 md:grid-cols-2 bg-gray-50 ">
+  <div class="">
+    <MapEmbed client:load />
+  </div>
+  <div class="flex items-center justify-center px-6 py-12">
+    <ContactForm client:load />
+  </div>
+</section>
+
+<section class="w-full px-4 py-16 bg-white text-black border-t border-gray-400">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 py-14">
+    
+    <!-- Left Side: Heading -->
+    <div class="flex items-start justify-start">
+      <h2 class="text-3xl md:text-4xl font-bold text-left">
+        We shape strategy & <br />
+        sculpt success
+      </h2>
+    </div>
+
+    <!-- Right Side: Two inner divs -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+      
+      <!-- Inner Div 1: Address + Social -->
+      <div class="space-y-4">
+        <h4 class="text-lg font-bold">Address</h4>
+        <p class="text-gray-700">1234 Startup Lane,<br />Innovation City, IN 560001</p>
+
+        <!-- Social Icons -->
+        <div class="flex gap-4 mt-6">
+          <a href="#" aria-label="Facebook" class="text-gray-600 hover:text-black transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook-icon lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram" class="text-gray-600 hover:text-black transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn" class="text-gray-600 hover:text-black transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin-icon lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>          </a>
+          <a href="#" aria-label="X" class="text-gray-600 hover:text-black transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Inner Div 2: Email + Phone -->
+      <div class="space-y-4">
+        <h4 class="text-lg font-bold">Say Hello</h4>
+        <p class="text-gray-700">Email: contact@startup.com</p>
+        <p class="text-gray-700">Phone: +91 98765 43210</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+<footer class="w-full px-4 py-6 bg-white text-gray-600">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center border-t border-gray-400 pt-6 pb-5">
+    
+    <!-- ✅ Left Side: Nav menu aligned to left end -->
+    <nav class="flex space-x-6 text-gray-600  text-sm font-medium">
+        <a href="#" class="inline-block border-b-2 border-gray-600 pb-1">Home</a>
+        <a href="#" class="inline-block hover:border-b-2 hover:border-gray-600 border-transparent pb-1 transition">Blog</a>
+        <a href="#" class="inline-block hover:border-b-2 hover:border-gray-600 border-transparent pb-1 transition">Services</a>
+        <a href="#" class="inline-block hover:border-b-2 hover:border-gray-600 border-transparent pb-1 transition">Contact</a>
+    </nav>
+
+    <!-- ✅ Right Side: All rights reserved -->
+    <div class="text-sm text-center md:text-right">
+      Zyntics © 2025  All rights reserved.
+    </div>
+
+  </div>
+</footer>

@@ -1,5 +1,5 @@
 ---
-
+import Logo from '../../assets/Asset 1.png'
 ---
 
 <!DOCTYPE html>
@@ -15,7 +15,9 @@
         <div class="flex items-center justify-between h-16">
           <!-- Left: Logo -->
           <div class="flex-shrink-0">
-            <a href="#" class="text-xl font-bold">MyLogo</a>
+            <a href="#" class="text-xl font-bold">
+              <img src={Logo.src} alt=""  class="w-[170px] md:w-[190px] lg:w-[200px]"">
+            </a>
           </div>
 
           <!-- Center: Nav Links (Hidden on small screens) -->

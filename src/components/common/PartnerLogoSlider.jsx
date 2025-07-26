@@ -50,7 +50,7 @@ export default function PartnerLogoSlider() {
         slidesPerView={2}
         spaceBetween={0}
         breakpoints={{
-          640: { slidesPerView: 3 },
+          0: { slidesPerView: 2 },
           768: { slidesPerView: 4 },
           1024: { slidesPerView: 6 },
         }}

@@ -28,47 +28,48 @@ const testimonials = [
     <p class="text-sm uppercase tracking-wide font-bold text-gray-500 mb-2">
       WHAT THEY SAY
     </p>
-    <h2 class="text-4xl md:text-4xl font-bold leading-tight mt-4">
+    <h2 class="text-4xl md:text-6xl font-bold leading-tight mt-4">
       Stories told by those <br />
       We've advised
     </h2>
   </div>
 
-  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[0.7fr_2fr] gap-20 items-start">
-    <!-- Left: Images horizontally + Name/Position -->
-    <div class="flex flex-col items-center space-y-4">
-      <div class="flex gap-4 flex-wrap justify-center" id="testimonial-avatars">
-        {testimonials.map((t, i) => (
-          <img
-            class="w-20 h-20 rounded-full object-cover border-4 cursor-pointer transition-all duration-300 shadow-md"
-            data-index={i}
-            src={t.image}
-            alt={t.name}
-          />
-        ))}
-      </div>
-      <div class="text-center mt-4">
-        <h3 id="testimonial-name" class="text-xl font-semibold mb-1">{testimonials[0].name}</h3>
-        <p id="testimonial-position" class="text-sm text-gray-600">{testimonials[0].position}</p>
-      </div>
-    </div>
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-20 items-start">
+<!-- Left: Images horizontally + Name/Position -->
+<div class="flex flex-col items-center space-y-5">
+  <div class="flex gap-5 flex-wrap justify-center" id="testimonial-avatars">
+    {testimonials.map((t, i) => (
+      <img
+        class="w-24 h-24 rounded-full object-cover border-4 cursor-pointer transition-all duration-300 shadow-md"
+        data-index={i}
+        src={t.image}
+        alt={t.name}
+      />
+    ))}
+  </div>
+  <div class="text-center mt-4">
+    <h3 id="testimonial-name" class="text-2xl font-semibold mb-1">{testimonials[0].name}</h3>
+    <p id="testimonial-position" class="text-base text-gray-600">{testimonials[0].position}</p>
+  </div>
+</div>
+
 
     <!-- Right: Comment + Arrows -->
     <div class="relative text-center md:text-left">
-      <p id="testimonial-comment" class="text-lg italic text-gray-800 transition-all duration-300">
-        “{testimonials[0].comment}”
+      <p id="testimonial-comment" class="text-xl  text-gray-800 transition-all duration-300">
+        {testimonials[0].comment}
       </p>
 
       <div class="flex justify-center md:justify-start gap-4 mt-6">
         <button
           id="prev-btn"
-          class="w-10 h-10 rounded-full bg-white border shadow hover:bg-gray-200 flex items-center justify-center"
+          class="w-14 h-10 rounded-lg bg-white border shadow hover:bg-gray-200 flex items-center justify-center hover:cursor-pointer"
         >
           <span>&larr;</span>
         </button>
         <button
           id="next-btn"
-          class="w-10 h-10 rounded-full bg-white border shadow hover:bg-gray-200 flex items-center justify-center"
+          class="w-14 h-10 rounded-lg bg-white border shadow hover:bg-gray-200 flex items-center justify-center hover:cursor-pointer"
         >
           <span>&rarr;</span>
         </button>

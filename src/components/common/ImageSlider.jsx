@@ -3,32 +3,41 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
 
+
 const images = [
   {
-    src: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80",
+    src: "https://storage.googleapis.com/a1aa/image/2db2664d-7c84-4cb6-36b7-70689fc1a72c.jpg",
     alt: "Business Team",
   },
   {
-    src: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=1920&q=80",
+    src: "https://storage.googleapis.com/a1aa/image/d18c08c7-97bc-4e73-f817-f1264a6f9762.jpg",
+    alt: "Business Team",
+  },
+  {
+    src: "https://storage.googleapis.com/a1aa/image/8bf6c506-5549-44fe-fe52-c7fbfd92995e.jpg",
     alt: "Startup Office",
   },
   {
-    src: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80",
+    src: "https://storage.googleapis.com/a1aa/image/507441d0-91ce-485f-c2cb-6da3b988a1f5.jpg",
     alt: "Collaboration",
   },
   {
-    src: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1920&q=80",
+    src: "https://storage.googleapis.com/a1aa/image/9980bc77-490b-4ef4-3141-0e2480b780a8.jpg",
     alt: "Creative Team",
   },
   {
-    src: "https://images.unsplash.com/photo-1531379410502-63bfe8cdaf6e?auto=format&fit=crop&w=1920&q=80",
+    src: "https://storage.googleapis.com/a1aa/image/16a9708a-a40b-40a7-e5fc-43b319bce939.jpg",
     alt: "Planning",
+  },
+  {
+    src: "https://storage.googleapis.com/a1aa/image/8bf6c506-5549-44fe-fe52-c7fbfd92995e.jpg",
+    alt: "Startup Office",
   },
 ];
 
 export default function ImageSlider() {
   return (
-    <div className="w-full px-4 mt-20">
+    <div className="w-full  mt-20">
       <div className="max-w-7xl mx-auto">
         <Swiper
           modules={[Autoplay]}
@@ -41,14 +50,14 @@ export default function ImageSlider() {
           breakpoints={{
             0: { slidesPerView: 2 },
             640: { slidesPerView: 3 },
-            1024: { slidesPerView: 3 },
+            1024: { slidesPerView: 6 },
           }}
           className="w-full"
         >
           {images.map((img, index) => (
             <SwiperSlide key={index}>
               <div className="flex justify-center">
-                <div className="w-[100px] h-[100px] md:w-[120px] md:h-[120px] lg:w-[140px] lg:h-[140px]">
+                <div className="w-[100px] h-[100px] md:w-[120px] md:h-[120px] lg:w-[140px] lg:h-[90px]">
                   <img
                     src={img.src}
                     alt={img.alt}

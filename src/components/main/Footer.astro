@@ -18,124 +18,74 @@
     </button>
    </div>
    <!-- Bottom section with dark gradient background -->
-   <div class="bg-gradient-to-r from-[#0a0e13] via-[#121721] to-[#1a1c2a] text-white px-12 py-10 rounded-b-2xl" style="font-feature-settings: 'liga' off">
-    <div class="flex flex-wrap justify-between gap-y-8">
-     <!-- Logo and social icons -->
-     <div class="flex flex-col gap-4 lg:ps-5">
-      <h2 class="font-extrabold text-4xl leading-7 mb-4">
-       Zyntics
+   <div class="bg-gradient-to-r from-[#0a0e13] via-[#121721] to-[#1a1c2a] text-white px-4 sm:px-6 md:px-8 lg:px-12 py-10 rounded-b-2xl" style="font-feature-settings: 'liga' off">
+  <div class="flex flex-wrap gap-y-10 justify-between lg:justify-between">
+
+    <!-- Logo and social icons -->
+    <div class="flex flex-col gap-4 w-full sm:w-1/2 lg:w-auto">
+      <h2 class="font-extrabold text-3xl md:text-4xl leading-7 mb-2">
+        Zyntics
       </h2>
-      <div class="flex space-x-4 text-white text-lg">
-       <a aria-label="Facebook" class="hover:text-gray-400" href="#">
-        <i class="fab fa-facebook-f">
-        </i>
-       </a>
-       <a aria-label="Instagram" class="hover:text-gray-400" href="#">
-        <i class="fab fa-instagram">
-        </i>
-       </a>
-       <a aria-label="LinkedIn" class="hover:text-gray-400" href="#">
-        <i class="fab fa-linkedin-in">
-        </i>
-       </a>
-       <a aria-label="YouTube" class="hover:text-gray-400" href="#">
-        <i class="fab fa-youtube">
-        </i>
-       </a>
+      <div class="flex space-x-4 text-white text-xl">
+        <a aria-label="Facebook" class="hover:text-gray-400" href="#"><i class="fab fa-facebook-f"></i></a>
+        <a aria-label="Instagram" class="hover:text-gray-400" href="#"><i class="fab fa-instagram"></i></a>
+        <a aria-label="LinkedIn" class="hover:text-gray-400" href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a aria-label="YouTube" class="hover:text-gray-400" href="#"><i class="fab fa-youtube"></i></a>
       </div>
-     </div>
-     <!-- Contacts -->
-     <div class=" ">
-      <h3 class="text-2xl font-semibold mb-3">
-       Contacts
-      </h3>
-      <p class="text-md leading-5 mb-4 ">
-       weeeweewrwreewew
-      </p>
-      <p class="text-md mb-4">
-       +12 34567890
-      </p>
-      <p class="text-md">
-       support@zyntics.com
-      </p>
-     </div>
-     <!-- Company -->
-     <div class="">
-      <h3 class="text-2xl font-semibold mb-3">
-       Company
-      </h3>
-      <ul class="text-md space-y-2">
-       <li>
-        About
-       </li>
-       <li>
-        Expertise
-       </li>
-       <li>
-        Sustainability
-       </li>
-       <li>
-        News &amp; Media
-       </li>
-       <li>
-        Case Studies
-       </li>
-       <li>
-        Contacts
-       </li>
-      </ul>
-     </div>
-     <!-- Services -->
-     <div class="">
-      <h3 class="text-2xl font-semibold mb-3">
-       Services
-      </h3>
-      <ul class="text-md space-y-2">
-       <li>
-        Cloud &amp; Web Development
-       </li>
-       <li>
-        Mobile App Development
-       </li>
-       <li>
-        E-commerce Development
-       </li>
-       <li>
-        Enterprise Solutions
-       </li>
-       <li>
-        AI &amp; ML Solutions
-       </li>
-      </ul>
-     </div>
     </div>
-    <!-- Bottom links and copyright -->
-    <div class="mt-10 flex flex-wrap justify-between  text-white font-light">
-      <span>
-       Enterprise Solutions
-      </span>
-      <span>
-       Intelligent E-Commerce
-      </span>
-      <span>
-       Enterprise Transformation
-      </span>
-      <span>
-       Blockchain &amp; Web3
-      </span>
+
+    <!-- Contacts -->
+    <div class="w-full sm:w-1/2 lg:w-auto">
+      <h3 class="text-xl md:text-2xl font-semibold mb-3">Contacts</h3>
+      <p class="text-sm leading-5 mb-2">weeeweewrwreewew</p>
+      <p class="text-sm mb-2">+12 34567890</p>
+      <p class="text-sm">support@zyntics.com</p>
     </div>
-     <div class="flex flex-row justify-between mt-10">
-      <span class="mb-1">
-       ©Zyntics 2025. All rights reserved.
-      </span>
-      <span>
-       Terms of use
-       <span class="font-normal">
-        Privacy Policy
-       </span>
-      </span>
-     </div>
-   </div>
+
+    <!-- Company -->
+    <div class="w-full sm:w-1/2 md:w-1/3 lg:w-auto">
+      <h3 class="text-xl md:text-2xl font-semibold mb-3">Company</h3>
+      <ul class="text-sm space-y-2">
+        <li>About</li>
+        <li>Expertise</li>
+        <li>Sustainability</li>
+        <li>News &amp; Media</li>
+        <li>Case Studies</li>
+        <li>Contacts</li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div class="w-full sm:w-1/2 md:w-1/3 lg:w-auto">
+      <h3 class="text-xl md:text-2xl font-semibold mb-3">Services</h3>
+      <ul class="text-sm space-y-2">
+        <li>Cloud &amp; Web Development</li>
+        <li>Mobile App Development</li>
+        <li>E-commerce Development</li>
+        <li>Enterprise Solutions</li>
+        <li>AI &amp; ML Solutions</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom links -->
+  <div class="mt-10 grid grid-cols-2 gap-y-4 sm:flex sm:flex-wrap sm:justify-between text-sm font-light">
+    <span>Enterprise Solutions</span>
+    <span>Intelligent E-Commerce</span>
+    <span>Enterprise Transformation</span>
+    <span>Blockchain &amp; Web3</span>
+  </div>
+
+  <!-- Copyright -->
+  <div class="mt-8 flex flex-col sm:flex-row justify-between text-sm font-light gap-2 sm:gap-0">
+    <span>©Zyntics 2025. All rights reserved.</span>
+    <span>
+      Terms of use
+      <span class="font-normal ml-2">Privacy Policy</span>
+    </span>
+  </div>
+</div>
+
   </div>
  </div>
 </footer>

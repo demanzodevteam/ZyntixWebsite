@@ -4,7 +4,7 @@ import Messanger from '../../../../assets/messenger.png'
 import Skype from '../../../../assets/skype.png'
 import Tel from '../../../../assets/telegram.png'
 import Discord from '../../../../assets/discord.png'
-
+import IntegrationSection from '../../../common/IntegrationSection '
 ---
 
 <!--------- Section 2 ------->
@@ -134,25 +134,8 @@ import Discord from '../../../../assets/discord.png'
 </div>
 
   </div>
-  <div class="relative grid grid-cols-1 md:grid-cols-2 gap-10 items-start bg-[#1F1F1F] text-white px-6 sm:px-10 py-8 rounded-xl mb-8">
-    <div>
-      <h2 class="text-2xl sm:text-3xl md:text-4xl font-normal leading-tight">
-        We work and integrate<br class="hidden sm:block" />with this services
-      </h2>
-    </div>
-
-    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 justify-items-center text-center">
-      <div><img src={Slack.src} alt="App 1" class="mx-auto w-10 h-10 object-cover" /><h4 class="text-sm mt-2 font-medium">Stack</h4></div>
-      <div><img src={Messanger.src} alt="App 2" class="mx-auto w-10 h-10 object-cover" /><h4 class="text-sm mt-2 font-medium">Messanger</h4></div>
-      <div><img src={Skype.src} alt="App 3" class="mx-auto w-10 h-10 object-cover" /><h4 class="text-sm mt-2 font-medium">Skype</h4></div>
-      <div><img src={Tel.src} alt="App 4" class="mx-auto w-10 h-10 object-cover" /><h4 class="text-sm mt-2 font-medium">Telegram</h4></div>
-      <div><img src={Discord.src} alt="App 5" class="mx-auto w-10 h-10 object-cover" /><h4 class="text-sm mt-2 font-medium">Discord</h4></div>
-    </div>
-
-    <div class="absolute -bottom-2 -right-2 bg-[#45D0BD] text-black p-2 rounded-md shadow-md">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-up"><path d="m18 15-6-6-6 6"/></svg>
-    </div>
-  </div>
+  <IntegrationSection />
+  
 </section>
 
 

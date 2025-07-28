@@ -1,0 +1,65 @@
+import React from "react";
+
+// Import your icons here
+import Slack from "../../assets/slack.png";
+import Messenger from "../../assets/messenger.png";
+import Skype from "../../assets/skype.png";
+import Tel from "../../assets/telegram.png";
+import Discord from "../../assets/discord.png";
+
+const services = [
+  { name: "Slack", icon: Slack },
+  { name: "Messenger", icon: Messenger },
+  { name: "Skype", icon: Skype },
+  { name: "Telegram", icon: Tel },
+  { name: "Discord", icon: Discord },
+];
+
+const IntegrationSection = () => {
+  return (
+    <div className="relative grid grid-cols-1 md:grid-cols-2 gap-10 items-start bg-[#1F1F1F] text-white px-6 sm:px-10 py-8 rounded-xl mb-8">
+      {/* Heading */}
+      <div>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-normal leading-tight">
+          We work and integrate
+          <br className="hidden sm:block" />
+          with this services
+        </h2>
+      </div>
+
+      {/* Service Icons */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 justify-items-center text-center">
+        {services.map((service) => (
+          <div key={service.name}>
+            <img
+              src={(service.icon).src}
+              alt={service.name}
+              className="mx-auto w-10 h-10 object-cover"
+            />
+            <h4 className="text-sm mt-2 font-medium">{service.name}</h4>
+          </div>
+        ))}
+      </div>
+
+      {/* Chevron Icon */}
+      <div className="absolute -bottom-2 -right-2 bg-[#45D0BD] text-black p-2 rounded-md shadow-md">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="lucide lucide-chevron-up"
+        >
+          <path d="m18 15-6-6-6 6" />
+        </svg>
+      </div>
+    </div>
+  );
+};
+
+export default IntegrationSection;

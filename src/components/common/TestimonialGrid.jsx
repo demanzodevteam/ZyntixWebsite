@@ -89,13 +89,13 @@ const TestimonialGrid = () => {
             key={index}
             className={`bg-white rounded-xl p-7 shadow-sm border border-transparent `}
           >
-            <h3 className="font-semibold text-[18px] mb-1">{t.username}</h3>
+            <h3 className="font-semibold text-[20px] mb-1">{t.username}</h3>
             <div className="text-yellow-300 text-xs mb-1">
               {Array.from({ length: t.stars }).map((_, i) => (
                 <i key={i} className="fas fa-star"></i>
               ))}
             </div>
-            <p className="leading-tight text-md">{t.text}</p>
+            <p className="leading-tight text-[14px]">{t.text}</p>
           </div>
         ))}
       </div>

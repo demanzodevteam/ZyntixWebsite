@@ -66,7 +66,7 @@ const BlogSection = () => {
                 width={400}
                 height={220}
               />
-              <div className="absolute bottom-2 left-2 bg-white text-[10px] text-[#4B4B4B] rounded-full px-3 py-0.5 font-normal max-w-max">
+              <div className="absolute bottom-2 left-2 bg-white text-[12px] text-[#4B4B4B] rounded-full px-3 py-0.5 font-normal max-w-max">
                 {post.date} / {post.author}
               </div>
             </div>
@@ -74,7 +74,7 @@ const BlogSection = () => {
               <h2 className="text-sm md:text-xl font-normal leading-snug mb-2 px-2">
                 {post.title}
               </h2>
-              <p className="text-[10px] text-[#9B9B9B] font-normal px-2">
+              <p className="text-[12px] text-[#9B9B9B] font-normal px-2">
                 {post.tags}
               </p>
             </div>

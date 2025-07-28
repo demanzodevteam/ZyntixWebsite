@@ -5,7 +5,7 @@
 <!------- Section 7 ------->
 
 <section class="relative w-full px-4 py-16 bg-[#FFFFFF] text-black overflow-hidden">
-  <div class="max-w-7xl mx-auto ">
+  <div class="max-w-[1400px] mx-auto ">
       <!-- Glowing Balls -->
  <div class="absolute w-[700px] h-[300px] bg-[#D4EFF7] opacity-300 rounded-full blur-[50px] top- left-[35%] -translate-x-1/2 -translate-y-1/2 z-0"></div>
   <div class="absolute w-[700px] h-[300px] bg-[#D4C5FF] opacity-300 rounded-full blur-[50px] top- left-[65%] -translate-x-1/2 -translate-y-1/2 z-0"></div>
@@ -29,40 +29,49 @@
       </div>
 
       <!-- Right Box: Stats & Highlight -->
-      <div class="relative rounded-xl overflow-hidden bg-gradient-to-r from-[#a3c7e3] to-[#a3c7e3] min-h-[260px] sm:min-h-[280px] md:min-h-[300px] inverted-radius">
-        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#a3c7e3] to-[#a3c7e3] opacity-90"></div>
-        <img src="https://storage.googleapis.com/a1aa/image/05473d2f-1579-4e75-f28e-0b5c6ae8c6a3.jpg" class="absolute inset-0 w-full h-full object-cover z-0" />
-        <div class="absolute inset-0 bg-gradient-to-r from-[#5B7DBD]/80 to-[#A9C9FF]/80 pointer-events-none"></div>
+    <div class="relative min-h-[300px]">
+  <!-- Masked Background Layer with Inverted Radius -->
+  <div class="absolute inset-0 z-0 longinverted-radius overflow-hidden rounded-xl">
+    <!-- Gradient + Image Layer -->
+    <div class="absolute inset-0 bg-gradient-to-r from-[#a3c7e3] to-[#a3c7e3]"></div>
+    <img
+      src="https://storage.googleapis.com/a1aa/image/05473d2f-1579-4e75-f28e-0b5c6ae8c6a3.jpg"
+      class="absolute inset-0 w-full h-full object-cover opacity-90"
+    />
+    <div class="absolute inset-0 bg-gradient-to-r from-[#5B7DBD]/80 to-[#A9C9FF]/80"></div>
+  </div>
 
-        <!-- Text on Left -->
-        <div class="absolute bottom-4 sm:bottom-6 left-4 sm:left-6 max-w-[90%] sm:max-w-[60%] z-10">
-          <p class="text-white font-bold text-xs sm:text-sm md:text-base leading-snug">
-            We create a professional product
-            <br />
-            using artificial intelligence
-          </p>
-        </div>
+  <!-- Foreground Content -->
+  <div class="relative z-10 px-4 sm:px-6 h-full">
+    <!-- Left Text -->
+    <div class="absolute bottom-4 sm:bottom-6 left-4 sm:left-6 max-w-[90%] sm:max-w-[60%]">
+      <p class="text-white font-bold text-xs sm:text-sm md:text-base leading-snug">
+        We create a professional product<br />
+        using artificial intelligence
+      </p>
+    </div>
 
-        <!-- Rotated Count -->
-        <div class="absolute top-20 sm:top-24 right-2 sm:right-6 flex flex-col items-center text-white font-extrabold text-2xl sm:text-3xl md:text-4xl leading-none rotate-90 origin-top-right select-none z-10">
-          500+
-        </div>
+    <!-- Rotated Count -->
+    <div class="absolute top-20 sm:top-24 right-2 sm:right-6 flex flex-col items-center text-white font-extrabold text-2xl sm:text-3xl md:text-4xl leading-none rotate-90 origin-top-right select-none">
+      500+
+    </div>
 
-        <!-- Project Label -->
-        <div class="absolute top-[8rem] sm:top-[11rem] right-2 sm:right-6 text-white text-[10px] sm:text-xs md:text-sm font-normal select-none z-10">
-          Created
-          <br />
-          projects
-        </div>
+    <!-- Project Label -->
+    <div class="absolute top-[8rem] sm:top-[11rem] right-2 sm:right-6 text-white text-[10px] sm:text-xs md:text-sm font-normal select-none">
+      Created<br />projects
+    </div>
 
-        <!-- Watch Video -->
-        <div class="absolute bottom-2 sm:bottom-4 right-2 sm:right-6 text-[10px] sm:text-xs text-black font-normal select-none z-10">
-          Watch Video
-        </div>
+    <!-- Action Button (Watch Video) inside curve -->
+   <button
+  class="absolute bottom-0 right-8 sm:w-30 h-10 sm:h-12  text-black flex items-center justify-center text-xs md:text-lg font-medium rounded-tl-[2.5rem] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black hover:cursor-pointer"
+>
+  Watch Video
+</button>
 
-        <!-- White Accent Corner -->
-        <div class="absolute bottom-0 right-0 w-12 sm:w-16 h-10 sm:h-12 bg-white text-black rounded-tl-2xl sm:rounded-tl-3xl z-10"></div>
-      </div>
+  </div>
+</div>
+
+
 
     </div>
 

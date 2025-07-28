@@ -38,7 +38,7 @@ const images = [
 export default function ImageSlider() {
   return (
     <div className="w-full  mt-20">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[1400px] mx-auto">
         <Swiper
           modules={[Autoplay]}
           loop={true}

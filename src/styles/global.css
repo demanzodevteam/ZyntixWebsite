@@ -67,7 +67,7 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 .zentics-p {
-  @apply text-[14px] md:text-[14px] lg:text-[18px] text-[#939393];
+  @apply text-[14px] md:text-[14px] lg:text-[18px] text-[#676767];
   font-family: "DM Sans", sans-serif;
 }
 .zentics-small-p {

@@ -45,14 +45,13 @@ const ArrowRightIcon = () => (
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className="lucide lucide-circle-arrow-right"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class="lucide lucide-arrow-right-icon lucide-arrow-right"
   >
-    <circle cx="12" cy="12" r="10" />
-    <path d="m12 16 4-4-4-4" />
-    <path d="M8 12h8" />
+    <path d="M5 12h14" />
+    <path d="m12 5 7 7-7 7" />
   </svg>
 );
 
@@ -62,22 +61,29 @@ const ServicesList = () => {
       <div className="w-full space-y-6">
         {services.map((service, index) => (
           <div key={index}>
-            <div className="grid grid-cols-1 md:grid-cols-[90px_500px_1fr_auto] gap-4 items-start py-4">
-              <span className="zentics-h2 font-bold text-gray-600">
+            <div className="group grid grid-cols-1 md:grid-cols-[90px_500px_1fr_auto] gap-4 items-start py-4">
+              <span className="zentics-h2 font-bold text-gray-600 group-hover:text-[#5057E6]">
                 {service.number}
               </span>
-              <h3 className="zentics-h3 font-bold text-gray-800 text-left px-10">
+
+              <h3 className="zentics-h3 font-bold text-gray-800 text-left md:px-10">
                 {service.title}
               </h3>
+
               <p className="zentics-p max-w-[500px]">{service.description}</p>
+
               <a
                 href="#"
-                className="text-gray-600 hover:text-blue-800 text-xl font-bold"
+                className="w-14 h-14 flex items-center justify-center text-gray-600 text-xl font-bold border border-gray-300 rounded-full group-hover:border-gray-800 transition-all duration-300"
               >
-                <ArrowRightIcon />
+                <span className="block transform transition-transform duration-300 group-hover:-rotate-45">
+                  <ArrowRightIcon />
+                </span>
               </a>
             </div>
+
             <hr className="mt-4 border-gray-300" />
+
           </div>
         ))}
       </div>

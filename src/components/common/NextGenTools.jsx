@@ -37,7 +37,7 @@ export default function NextGenTools() {
   return (
     <section className="max-w-7xl mx-auto px-6 py-16">
       <div className="max-w-md">
-        <h1 className="text-4xl font-bold leading-tight">
+        <h1 className="text-h4 font-bold leading-tight">
           Driving Innovation with
           <br />
           Next-Gen Tools
@@ -50,7 +50,7 @@ export default function NextGenTools() {
           className="border border-purple-500 rounded-md h-10 px-3 flex items-center gap-2 justify-start text-black hover:bg-purple-50 transition"
         >
           <i className="fas fa-arrow-left"></i>
-          <span>Find Out More</span>
+          <span className="text-small-p text-black">Find Out More</span>
         </button>
       </div>
 
@@ -61,8 +61,8 @@ export default function NextGenTools() {
               {item.number}
             </div>
             <div className="max-w-xs">
-              <p className="font-bold text-lg leading-tight">{item.title}</p>
-              <p className="text-sm leading-snug mt-2 whitespace-pre-line">
+              <p className="text-p !text-black font-bold leading-tight">{item.title}</p>
+              <p className="text-small-p leading-snug mt-2 whitespace-pre-line">
                 {item.description}
               </p>
             </div>

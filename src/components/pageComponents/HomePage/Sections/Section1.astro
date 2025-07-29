@@ -1,48 +1,53 @@
 ---
+import LogoImg from '../../../../assets/zyn.png'
 ---
 <!------- Section 1 --------->
 
-<section class="w-full py-16 bg-white text-black px-2">
+<section class="w-full py-10 md:py-16 bg-white text-black px-6">
   <div class="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-[0.8fr_1fr] gap-10">
-    
-    <!-- Left Side (Split into two columns) -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-      
-      <!-- Text Block -->
-      <div>
-        <h3 class="text-xl font-bold mb-4">MotionStack</h3>
-        <p class="text-gray-700 ">
-          We help businesses launch and scale high-performance digital platform
-        </p>
-      </div>
-
-      <!-- Image Block -->
-      <div>
-        <img
-          src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80"
-          alt="Sample"
-          class="w-full h-auto rounded-lg shadow-md"
-        />
-      </div>
-    </div>
-
-    <!-- Right Side -->
-    <div class="flex items-center justify-center text-center lg:text-left ">
-        <div>
-            <h2 class="text-4xl md:text-7xl font-extrabold leading-tight">
-        Future Ready<br />
-         Digital Engineering <br />
+  
+  <!-- Right Side (Comes first on mobile) -->
+  <div class="order-1 lg:order-2 flex items-center justify-center text-left lg:text-left">
+    <div>
+      <h2 class="text-h1 font-extrabold leading-tight">
+        Future Ready
+        Digital Engineering 
       </h2>
-      <p class="text-4xl md:text-5xl leading-tight">
+      <p class="text-h2 leading-tight">
         Custom Web,Mobile & AI Solutions Built for Growth
       </p>
-        </div>
-      
     </div>
   </div>
+
+  <!-- Left Side (Comes second on mobile) -->
+ <div class="order-2 lg:order-1 grid grid-cols-[0.4fr_1fr] sm:grid-cols-2 gap-6 items-center">
+  
+  <!-- Image Block - Comes first on mobile -->
+  <div class="order-1 sm:order-2">
+   <img
+src={LogoImg.src}
+  alt="Sample"
+  class="w-full max-w-[240px] h-auto mx-auto sm:mx-0"
+/>
+
+  </div>
+
+  <!-- Text Block - Comes second on mobile -->
+  <div class="order-2 sm:order-1">
+    <h3 class="text-small-p uppercase font-bold mb-4 leading-snug tracking-widest">Motion Stack</h3>
+    <p class="text-gray-700 zentics-p">
+      We help businesses launch and scale high-performance digital platform
+    </p>
+  </div>
+</div>
+
+
+</div>
+
+
 <img
-  src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80"
+  src="https://variety.axiomthemes.com/wp-content/uploads/2024/01/image-6-copyright.jpg"
   alt="Background Design"
-  class="mt-10 mx-auto w-full max-w-[1400px] object-cover h-100"
+  class="mt-10 mx-auto w-full max-w-[1400px] object-cover h-35 md:h-100"
 />
 </section>

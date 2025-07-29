@@ -1,45 +1,9 @@
 ---
-import TabSection from "../../../common/TabSection";
+import TabSection from '../../../common/TabSection'
 
 ---
 <!------- Section 4 ------>
 
 <section class="max-w-[1400px] mx-auto sm:py-16 md:py-18 px-4">
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 bg-[#F9FCFF] rounded-lg py-6 px-5 md:px-10">
-    <!-- Left Column -->
-    <div class="flex flex-col relative items-start">
-      <img
-        alt="Colorful hummingbird"
-        class="absolute top-0 left-0 rounded-full bg-[#ECECEC] w-12 h-12"
-        src="https://storage.googleapis.com/a1aa/image/64b7399f-022f-452e-5288-8d625679d66e.jpg"
-      />
-
-      <h1 class="text-h2 font-extrabold text-[#130f26] leading-tight mt-12 sm:mt-14 mb-4">
-        Driving Growth for<br class="hidden sm:inline" />
-        Businesses of All-sizes
-      </h1>
-
-      <p class="text-p !text-[#4b5563] text-base  font-semibold leading-relaxed max-w-[460px] mb-7">
-        Led by engineers. Backed by strategy. Built for outcomes.
-      </p>
-
-      <!-- TABS -->
-      <TabSection client:load />
-
-      <img
-        alt="Colorful hummingbird logo icon on light background"
-        class="absolute -bottom-10 left-0 opacity-30 rounded-full w-12 h-12"
-        src="https://storage.googleapis.com/a1aa/image/64b7399f-022f-452e-5288-8d625679d66e.jpg"
-      />
-    </div>
-
-    <!-- Right Column -->
-    <div class="flex justify-center items-center">
-      <img
-        alt="Team in meeting room"
-        class="rounded-xl shadow-lg w-full max-w-md md:max-w-full h-auto"
-        src="https://storage.googleapis.com/a1aa/image/08f483e6-e85e-4a12-c30a-152f7f51bae5.jpg"
-      />
-    </div>
-  </div>
+  <TabSection client:load/>
 </section>

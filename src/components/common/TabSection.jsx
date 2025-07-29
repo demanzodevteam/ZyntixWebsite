@@ -35,10 +35,10 @@ const TabSection = () => {
         </div>
 
         {/* Right Column - Image updates with tab */}
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center transform transition-all duration-700 ease-in-out hover:-translate-y-4">
           <img
             alt="Dynamic Tab Image"
-            className="w-full max-w-md md:max-w-full h-auto"
+            className="w-full max-w-md md:max-w-full h-auto "
             src={currentImage}
           />
         </div>

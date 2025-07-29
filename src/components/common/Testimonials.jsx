@@ -42,7 +42,7 @@ export default function Testimonials() {
               className={`w-24 h-24 rounded-full object-cover border-4 cursor-pointer transition-all duration-300 shadow-md ${
                 index === i
                   ? "border-blue-600"
-                  : "grayscale opacity-50 border-gray-300"
+                  : "grayscale opacity-50 border-gray-300 hover:opacity-100 hover:grayscale-0 hover:border-blue-500"
               }`}
               onClick={() => setIndex(i)}
               src={t.image}
@@ -62,7 +62,7 @@ export default function Testimonials() {
 
       {/* Right: Comment + Arrows */}
       <div className="relative text-center md:text-left">
-        <p className="zentics-p !text-gray-800 transition-all duration-300">
+        <p className="zentics-h6 !text-gray-800 transition-all duration-300">
           “{testimonials[index].comment}”
         </p>
 

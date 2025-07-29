@@ -56,13 +56,13 @@ const BlogSection = () => {
         {blogData.map((post, idx) => (
           <article
             key={idx}
-            className="border border-[#E6E6E6] rounded-lg overflow-hidden"
+            className="border border-[#E6E6E6] rounded-lg overflow-hidden group"
           >
             <div className="relative">
               <img
                 src={post.img}
                 alt={post.alt}
-                className="w-full h-[140px] md:h-[200px] object-cover rounded-t-lg"
+                className="w-full h-[140px] md:h-[200px] object-cover rounded-t-lg transform transition-transform duration-500 ease-in-out group-hover:scale-110"
                 width={400}
                 height={220}
               />

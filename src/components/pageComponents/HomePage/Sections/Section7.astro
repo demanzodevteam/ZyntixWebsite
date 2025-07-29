@@ -29,14 +29,14 @@
       </div>
 
       <!-- Right Box: Stats & Highlight -->
-    <div class="relative min-h-[300px]">
+    <div class="relative min-h-[300px] group">
   <!-- Masked Background Layer with Inverted Radius -->
   <div class="absolute inset-0 z-0 longinverted-radius overflow-hidden rounded-xl">
     <!-- Gradient + Image Layer -->
     <div class="absolute inset-0 bg-gradient-to-r from-[#a3c7e3] to-[#a3c7e3]"></div>
     <img
       src="https://storage.googleapis.com/a1aa/image/05473d2f-1579-4e75-f28e-0b5c6ae8c6a3.jpg"
-      class="absolute inset-0 w-full h-full object-cover opacity-90"
+      class="absolute inset-0 w-full h-full object-cover opacity-90 transform transition-transform ease-in-out duration-300 group-hover:scale-110 "
     />
     <div class="absolute inset-0 bg-gradient-to-r from-[#5B7DBD]/80 to-[#A9C9FF]/80"></div>
   </div>
@@ -63,9 +63,9 @@
 
     <!-- Action Button (Watch Video) inside curve -->
    <button
-  class="absolute bottom-0 right-8 sm:w-30 h-10 sm:h-12  !text-black flex items-center justify-center zentics-p font-medium rounded-tl-[2.5rem] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black hover:cursor-pointer"
+  class="absolute bottom-0 right-2 md:right-3 lg:right-8 sm:w-40 h-10 sm:h-12  !text-black flex items-center justify-center zentics-p font-medium rounded-tl-[2.5rem] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black hover:cursor-pointer"
 >
-  Watch Video
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-play-icon lucide-circle-play"><path d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z"/><circle cx="12" cy="12" r="10"/></svg>Watch Video
 </button>
 
   </div>

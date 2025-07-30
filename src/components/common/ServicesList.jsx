@@ -61,7 +61,7 @@ const ServicesList = () => {
       <div className="w-full space-y-6">
         {services.map((service, index) => (
           <div key={index}>
-            <div className="group grid grid-cols-1 md:grid-cols-[90px_500px_1fr_auto] gap-4 items-start py-4">
+            <div className="group grid grid-cols-1 md:grid-cols-[50px_400px_1fr_auto] lg:grid-cols-[90px_500px_1fr_auto] gap-4 items-start py-4">
               <span className="zyntics-h2 font-bold text-gray-600 group-hover:text-[#5057E6]">
                 {service.number}
               </span>

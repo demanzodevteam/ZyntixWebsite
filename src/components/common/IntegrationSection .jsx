@@ -22,9 +22,9 @@ const IntegrationSection = () => {
       {/* Heading */}
       <div>
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-normal leading-tight">
-          We work and integrate
+          End-to-End Stack for Agile
           <br className="hidden sm:block" />
-          with this services
+          Product Delivery
         </h2>
       </div>
 
@@ -32,10 +32,11 @@ const IntegrationSection = () => {
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 justify-items-center text-center">
         {services.map((service) => (
           <div
-  className="transform transition-transform duration-500 ease-in-out hover:translate-y-6"
-  key={service.name}>
+            className="transform transition-transform duration-500 ease-in-out hover:translate-y-6"
+            key={service.name}
+          >
             <img
-              src={(service.icon).src}
+              src={service.icon.src}
               alt={service.name}
               className="mx-auto w-11 h-11 object-cover "
             />

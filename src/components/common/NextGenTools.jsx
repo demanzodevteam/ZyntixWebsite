@@ -54,7 +54,7 @@ export default function NextGenTools() {
         </button>
       </div>
 
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {items.map((item, index) => (
           <div key={index} className="flex items-center space-x-4">
             <div className="text-[80px] rotate-270 font-extrabold vertical-text-outline font-sans">

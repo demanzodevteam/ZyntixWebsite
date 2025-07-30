@@ -1,18 +1,19 @@
 import React from "react";
 
 // Import your icons here
-import Slack from "../../assets/slack.png";
-import Messenger from "../../assets/messenger.png";
-import Skype from "../../assets/skype.png";
-import Tel from "../../assets/telegram.png";
-import Discord from "../../assets/discord.png";
+import Slack from "../../assets/react.png";
+import Wordpress from "../../assets/wordpress.png";
+import Nestjs from "../../assets/nestjs.png";
+// import Nestjs from "../../assets/Symbol Alternative.svg";
+import Typescript from "../../assets/typescript.png";
+import Shopify from "../../assets/shopify.png";
 
 const services = [
-  { name: "Slack", icon: Slack },
-  { name: "Messenger", icon: Messenger },
-  { name: "Skype", icon: Skype },
-  { name: "Telegram", icon: Tel },
-  { name: "Discord", icon: Discord },
+  { name: "React", icon: Slack },
+  { name: "Nest.js", icon: Nestjs },
+  { name: "Typescript", icon: Typescript },
+  { name: "Wordpress", icon: Wordpress },
+  { name: "Shopify", icon: Shopify },
 ];
 
 const IntegrationSection = () => {
@@ -36,7 +37,7 @@ const IntegrationSection = () => {
             <img
               src={(service.icon).src}
               alt={service.name}
-              className="mx-auto w-10 h-10 object-cover"
+              className="mx-auto w-11 h-11 object-cover "
             />
             <h4 className="text-sm mt-2 font-medium">{service.name}</h4>
           </div>

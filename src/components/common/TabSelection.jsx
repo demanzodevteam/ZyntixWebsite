@@ -61,19 +61,21 @@ const TabSelection = ({ onImageChange }) => {
   return (
     <div className="flex flex-col gap-6 w-full max-w-md">
       {/* Tab Buttons */}
-      <div className="flex gap-2 bg-white rounded-md shadow-md border border-gray-200 w-full p-2 sm:p-3 overflow-x-auto whitespace-nowrap">
-        {tabs.map((tab) => (
+      <div className="flex flex-nowrap justify-start items-center gap-2 bg-white rounded-md shadow-md border border-gray-200 w-full p-2 sm:p-3 overflow-x-auto">
+        {tabs.slice(0, 3).map((tab) => (
           <button
             key={tab.id}
-            className={`flex-shrink-0 flex items-center gap-2 text-xs md:text-sm font-semibold px-4 md:px-6 py-2 md:py-2.5 rounded-md transition-all hover:cursor-pointer ${
-              activeTab === tab.id
-                ? "bg-gradient-to-r from-[#0b147c] to-[#4b1bac] text-white"
-                : "text-[#130f26] hover:bg-gradient-to-r from-[#0b147c] to-[#4b1bac] hover:text-white"
-            }`}
+            className={`flex-shrink-0 flex items-center gap-2 font-semibold px-3 sm:px-5 py-2 rounded-md whitespace-nowrap
+        text-[clamp(0.65rem,3vw,0.85rem)] 
+        ${
+          activeTab === tab.id
+            ? "bg-gradient-to-r from-[#0b147c] to-[#4b1bac] text-white"
+            : "text-[#130f26] hover:bg-gradient-to-r from-[#0b147c] to-[#4b1bac] hover:text-white"
+        }`}
             onClick={() => handleTabClick(tab.id)}
           >
             <i className={`${tab.icon} text-sm`} />
-            {tab.label}
+            <span>{tab.label}</span>
           </button>
         ))}
       </div>

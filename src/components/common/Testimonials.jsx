@@ -51,10 +51,10 @@ export default function Testimonials() {
           ))}
         </div>
         <div className="text-center mt-4">
-          <h3 className="zentics-h6 font-semibold mb-1">
+          <h3 className="zyntics-h6 font-semibold mb-1">
             {testimonials[index].name}
           </h3>
-          <p className="zentics-small-p text-gray-600">
+          <p className="zyntics-small-p text-gray-600">
             {testimonials[index].position}
           </p>
         </div>
@@ -62,7 +62,7 @@ export default function Testimonials() {
 
       {/* Right: Comment + Arrows */}
       <div className="relative text-center md:text-left">
-        <p className="zentics-h6 !text-gray-800 transition-all duration-300">
+        <p className="zyntics-h6 !text-gray-800 transition-all duration-300">
           “{testimonials[index].comment}”
         </p>
 

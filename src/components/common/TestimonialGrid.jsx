@@ -75,7 +75,7 @@ const TestimonialGrid = () => {
             <i key={i} className="fas fa-star"></i>
           ))}
         </div>
-        <h2 className="text-black text-h3 font-normal leading-tight mx-auto">
+        <h2 className="text-black text-h3 font-normal leading-tight mx-auto px-4">
           User stories: hear what others love <br />
           about our <span className="bg-gradient-to-r from-[#6432F1] via-[#8b28f4] to-[#be1cf8] bg-clip-text text-transparent">WordPress themes!</span>
 

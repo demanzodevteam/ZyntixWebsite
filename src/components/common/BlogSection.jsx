@@ -43,7 +43,7 @@ const BlogSection = () => {
           <div className="p-[1px] rounded-2xl bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 inline-block">
             <button
               aria-label="More articles"
-              className="zentics-small-p font-normal text-[#4B6CB7] bg-white rounded-2xl px-6 py-3 flex items-center gap-1 hover:bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 hover:text-white transition hover:cursor-pointer"
+              className="zyntics-small-p font-normal text-[#4B6CB7] bg-white rounded-2xl px-6 py-3 flex items-center gap-1 hover:bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 hover:text-white transition hover:cursor-pointer"
             >
               More articles
               <i className="fas fa-arrow-right text-[10px]" />
@@ -66,15 +66,15 @@ const BlogSection = () => {
                 width={400}
                 height={220}
               />
-              <div className="absolute bottom-2 left-2 bg-white zentics-small-p text-[#4B4B4B] rounded-full px-3 py-0.5 font-normal max-w-max">
+              <div className="absolute bottom-2 left-2 bg-white zyntics-small-p text-[#4B4B4B] rounded-full px-3 py-0.5 font-normal max-w-max">
                 {post.date} / {post.author}
               </div>
             </div>
             <div className="p-4">
-              <h2 className="zentics-p !text-black font-normal leading-snug mb-2 px-2">
+              <h2 className="zyntics-p !text-black font-normal leading-snug mb-2 px-2">
                 {post.title}
               </h2>
-              <p className="zentics-small-p text-[#9B9B9B] font-normal px-2">
+              <p className="zyntics-small-p text-[#9B9B9B] font-normal px-2">
                 {post.tags}
               </p>
             </div>

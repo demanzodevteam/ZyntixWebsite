@@ -83,10 +83,10 @@ const TabSelection = ({ onImageChange }) => {
         <h3 className="font-semibold text-h6 text-xl text-[#130f26] mb-3">
           {active.title}
         </h3>
-        <p className="!text-[#4b5563] zentics-p leading-relaxed mb-6">
+        <p className="!text-[#4b5563] zyntics-p leading-relaxed mb-6">
           {active.description}
         </p>
-        <div className="grid grid-cols-2 gap-y-4 zentics-p !text-[#4b5563]">
+        <div className="grid grid-cols-2 gap-y-4 zyntics-p !text-[#4b5563]">
           {active.features.map((feature) => (
             <div key={feature} className="flex items-center gap-2">
               <i className="fas fa-check-circle text-[#6c63ff] text-base" />
@@ -96,7 +96,7 @@ const TabSelection = ({ onImageChange }) => {
         </div>
         <a
           href="#"
-          className="inline-flex items-center gap-2 mt-6 zentics-p !text-[#1e40af] font-semibold underline"
+          className="inline-flex items-center gap-2 mt-6 zyntics-p !text-[#1e40af] font-semibold underline"
         >
           Get Details <i className="fas fa-arrow-right" />
         </a>

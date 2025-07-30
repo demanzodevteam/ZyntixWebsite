@@ -62,15 +62,15 @@ const ServicesList = () => {
         {services.map((service, index) => (
           <div key={index}>
             <div className="group grid grid-cols-1 md:grid-cols-[90px_500px_1fr_auto] gap-4 items-start py-4">
-              <span className="zentics-h2 font-bold text-gray-600 group-hover:text-[#5057E6]">
+              <span className="zyntics-h2 font-bold text-gray-600 group-hover:text-[#5057E6]">
                 {service.number}
               </span>
 
-              <h3 className="zentics-h3 font-bold text-gray-800 text-left md:px-10">
+              <h3 className="zyntics-h3 font-bold text-gray-800 text-left md:px-10">
                 {service.title}
               </h3>
 
-              <p className="zentics-p max-w-[500px]">{service.description}</p>
+              <p className="zyntics-p max-w-[500px]">{service.description}</p>
 
               <a
                 href="#"
@@ -83,7 +83,6 @@ const ServicesList = () => {
             </div>
 
             <hr className="mt-4 border-gray-300" />
-
           </div>
         ))}
       </div>

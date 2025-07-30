@@ -19,7 +19,7 @@ body {
   @apply text-[26px] md:text-[38px] lg:text-[56px];
 }
 .text-h3 {
-  @apply text-[26px] sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px];
+  @apply text-[30px] sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px];
 }
 .text-h4 {
   @apply text-[22px] sm:text-[26px] md:text-[30px] lg:text-[34px] xl:text-[38px];
@@ -41,40 +41,37 @@ body {
   @apply text-[14px] md:text-[14px] lg:text-[14px];
 }
 
-
-.zentics-h1 {
+.zyntics-h1 {
   font-size: calc(45px + 2vw);
   font-family: "DM Sans", sans-serif;
 }
-.zentics-h2 {
+.zyntics-h2 {
   @apply text-[26px] md:text-[38px] lg:text-[56px];
   font-family: "DM Sans", sans-serif;
 }
-.zentics-h3 {
+.zyntics-h3 {
   @apply text-[22px] md:text-[32px] lg:text-[34px];
-   font-family: "DM Sans", sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
-.zentics-h4 {
+.zyntics-h4 {
   font-size: calc(26px + 1.4vw);
   font-family: "DM Sans", sans-serif;
 }
-.zentics-h5 {
+.zyntics-h5 {
   font-size: calc(22px + 1.2vw);
   font-family: "DM Sans", sans-serif;
 }
-.zentics-h6 {
+.zyntics-h6 {
   @apply text-[14px] sm:text-[15px] md:text-[16px] lg:text-[22px];
   font-family: "DM Sans", sans-serif;
 }
-.zentics-p {
+.zyntics-p {
   @apply text-[14px] md:text-[14px] lg:text-[18px] text-[#676767];
   font-family: "DM Sans", sans-serif;
 }
-.zentics-small-p {
+.zyntics-small-p {
   @apply text-[14px] md:text-[14px] lg:text-[14px];
 }
-
-
 
 .text-outline {
   -webkit-text-stroke: 1.5px white; /* Border thickness and color */

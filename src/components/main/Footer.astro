@@ -17,21 +17,33 @@ import FooterImg from '../../assets/footer-img.jpg'
   <div class="w-full px-4">
     <div class="max-w-[1400px] mx-auto rounded-2xl overflow-hidden mb-10" style="box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.15)">
       <!-- Top section with background image and text -->
-      <div class="relative rounded-t-2xl overflow-hidden">
-      <img alt="Abstract" class="w-full h-92 object-cover" src={FooterImg.src} />
-        <div class="text-h3 absolute top-20 left-16 text-white " style="font-feature-settings: 'liga' off">
-          Elevate your business<br />
-          with our innovative<br />
-          solutions
-        </div>
-        <button
-          aria-label="Get in touch"
-          class="absolute top-20 right-20 w-24 h-32 border border-white rounded-full text-white text-small-p font-light flex items-center justify-center leading-tight"
-          style="font-feature-settings: 'liga' off"
-        >
-          Get in touch
-        </button>
-      </div>
+     <div class="relative rounded-t-2xl overflow-hidden">
+  <!-- Background Image -->
+  <img alt="Abstract" class="w-full aspect-[4/3.5] md:aspect-[5/1.5] lg:aspect-[6/2] object-cover" src={FooterImg.src} />
+
+  <!-- Content: Text and Button -->
+  <div
+    class="absolute inset-0 flex flex-col md:flex-row justify-between items-start lg:items-center px-6 lg:px-16 py-10 text-white"
+    style="font-feature-settings: 'liga' off"
+  >
+    <!-- Text Section -->
+    <div class="text-h3  leading-tight">
+      Elevate your business<br />
+      with our innovative<br />
+      solutions
+    </div>
+
+    <!-- Button Section -->
+    <button
+      aria-label="Get in touch"
+      class="w-30 h-40 border border-white rounded-full text-white text-small-p font-light flex items-center justify-center leading-tight"
+      style="font-feature-settings: 'liga' off"
+    >
+      Get in touch
+    </button>
+  </div>
+</div>
+
 
       <!-- Bottom section -->
       <div

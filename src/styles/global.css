@@ -42,11 +42,11 @@ body {
 }
 
 .zyntics-h1 {
-  font-size: calc(45px + 2vw);
+  @apply text-[35px] md:text-[64px] lg:text-[80px];
   font-family: "DM Sans", sans-serif;
 }
 .zyntics-h2 {
-  @apply text-[26px] md:text-[38px] lg:text-[56px];
+  @apply text-[34px] md:text-[38px] lg:text-[56px];
   font-family: "DM Sans", sans-serif;
 }
 .zyntics-h3 {
@@ -58,7 +58,7 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 .zyntics-h5 {
-  font-size: calc(22px + 1.2vw);
+  @apply text-[22px] md:text-[32px] lg:text-[34px];
   font-family: "DM Sans", sans-serif;
 }
 .zyntics-h6 {

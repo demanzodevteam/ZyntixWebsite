@@ -27,11 +27,6 @@ const TabSection = () => {
 
           {/* Pass image setter to tab */}
           <TabSelection onImageChange={setCurrentImage} />
-          <img
-            alt="Hummingbird logo"
-            className="absolute -bottom-10 left-0 opacity-30 rounded-full w-12 h-12"
-            src="https://storage.googleapis.com/a1aa/image/64b7399f-022f-452e-5288-8d625679d66e.jpg"
-          />
         </div>
 
         {/* Right Column - Image updates with tab */}

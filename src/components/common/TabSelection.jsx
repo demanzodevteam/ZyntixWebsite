@@ -69,8 +69,8 @@ const TabSelection = ({ onImageChange }) => {
         text-[clamp(0.65rem,3vw,0.85rem)] whitespace-nowrap
         ${
           activeTab === tab.id
-            ? "bg-gradient-to-r from-[#0b147c] to-[#4b1bac] text-white"
-            : "text-[#130f26] hover:bg-gradient-to-r from-[#0b147c] to-[#4b1bac] hover:text-white"
+            ? "bg-gradient-to-r from-[#2DB5FF] via-[#7A8FFC] to-[#A678FF] text-white"
+            : "text-[#130f26] hover:bg-gradient-to-r from-[#2DB5FF] via-[#7A8FFC] to-[#A678FF] hover:text-white"
         }`}
             onClick={() => handleTabClick(tab.id)}
           >

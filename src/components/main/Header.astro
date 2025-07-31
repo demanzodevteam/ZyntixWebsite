@@ -9,7 +9,9 @@ import Logo from "../../assets/Zyntics-logo.png";
   <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 lg:py-4">
     <div class="flex items-center justify-between h-16">
       <!-- Left: Logo -->
-      <div class="flex-shrink-0 transform transition-transform duration-300 ease-in-out hover:scale-110">
+      <div
+        class="flex-shrink-0 transform transition-transform duration-300 ease-in-out hover:scale-110"
+      >
         <a href="#" class="text-xl font-bold">
           <img
             src={Logo.src}
@@ -89,7 +91,7 @@ import Logo from "../../assets/Zyntics-logo.png";
         <!-- Tablet Menu Toggle Button (for md only) -->
         <button
           id="tablet-menu-toggle"
-          class="hidden md:flex xl:hidden text-black focus:outline-none"
+          class="hidden md:flex xl:hidden text-black focus:outline-none hover:cursor-pointer"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -158,7 +160,7 @@ import Logo from "../../assets/Zyntics-logo.png";
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
+            class="h-6 w-6 hover:cursor-pointer"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -202,85 +204,145 @@ import Logo from "../../assets/Zyntics-logo.png";
       </button>
     </div>
     <nav class="space-y-4 text-lg mt-15">
-      <div class="flex items-center text-gray-400 hover:text-white space-x-4">
-        <a href="#" class="block text-xl font-bold">Home </a>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-arrow-right-icon lucide-arrow-right"
-          ><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg
+      <div class="space-y-2">
+        <div
+          class="flex items-center text-gray-400 hover:text-white space-x-4"
+          data-toggle="menu"
         >
+          <a href="#" class="block text-xl font-bold">Home </a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-arrow-right-icon lucide-arrow-right"
+            ><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg
+          >
+        </div>
+        <div
+          class="submenu max-h-0 overflow-hidden opacity-0 pl-4 space-y-2 text-gray-300 transition-all duration-500 ease-in-out"
+        >
+          <a href="#" class="block text-base hover:text-white">Overview</a>
+          <a href="#" class="block text-base hover:text-white">Features</a>
+          <a href="#" class="block text-base hover:text-white">Integrations</a>
+        </div>
       </div>
-      <div class="flex items-center text-gray-400 hover:text-white space-x-4">
-        <a href="#" class="block text-xl font-bold">Pages </a>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-arrow-right-icon lucide-arrow-right"
-          ><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg
+      <div class="space-y-2">
+        <div
+          class="flex items-center text-gray-400 hover:text-white space-x-4"
+          data-toggle="menu"
         >
+          <a href="#" class="block text-xl font-bold">Pages </a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-arrow-right-icon lucide-arrow-right"
+            ><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg
+          >
+        </div>
+        <div
+          class="submenu max-h-0 overflow-hidden opacity-0 pl-4 space-y-2 text-gray-300 transition-all duration-500 ease-in-out"
+        >
+          <a href="#" class="block text-base hover:text-white">Overview</a>
+          <a href="#" class="block text-base hover:text-white">Features</a>
+          <a href="#" class="block text-base hover:text-white">Integrations</a>
+        </div>
       </div>
-      <div class="flex items-center text-gray-400 hover:text-white space-x-4">
-        <a href="#" class="block text-xl font-bold">Portfolio </a>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-arrow-right-icon lucide-arrow-right"
-          ><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg
+      <div class="space-y-2">
+        <div
+          class="flex items-center text-gray-400 hover:text-white space-x-4"
+          data-toggle="menu"
         >
+          <a href="#" class="block text-xl font-bold">Portfolio </a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-arrow-right-icon lucide-arrow-right"
+            ><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg
+          >
+        </div>
+        <div
+          class="submenu max-h-0 overflow-hidden opacity-0 pl-4 space-y-2 text-gray-300 transition-all duration-500 ease-in-out"
+        >
+          <a href="#" class="block text-base hover:text-white">Overview</a>
+          <a href="#" class="block text-base hover:text-white">Features</a>
+          <a href="#" class="block text-base hover:text-white">Integrations</a>
+        </div>
       </div>
-      <div class="flex items-center text-gray-400 hover:text-white space-x-4">
-        <a href="#" class="block text-xl font-bold">Blog </a>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-arrow-right-icon lucide-arrow-right"
-          ><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg
+      <div class="space-y-2">
+        <div
+          class="flex items-center text-gray-400 hover:text-white space-x-4"
+          data-toggle="menu"
         >
+          <a href="#" class="block text-xl font-bold">Blog </a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-arrow-right-icon lucide-arrow-right"
+            ><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg
+          >
+        </div>
+        <div
+          class="submenu max-h-0 overflow-hidden opacity-0 pl-4 space-y-2 text-gray-300 transition-all duration-500 ease-in-out"
+        >
+          <a href="#" class="block text-base hover:text-white">Overview</a>
+          <a href="#" class="block text-base hover:text-white">Features</a>
+          <a href="#" class="block text-base hover:text-white">Integrations</a>
+        </div>
       </div>
-      <div class="flex items-center text-gray-400 hover:text-white space-x-4">
-        <a href="#" class="block text-xl font-bold">Shop </a>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-arrow-right-icon lucide-arrow-right"
-          ><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg
+      <div class="space-y-2">
+        <div
+          class="flex items-center text-gray-400 hover:text-white space-x-4"
+          data-toggle="menu"
         >
+          <a href="#" class="block text-xl font-bold">Shop </a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-arrow-right-icon lucide-arrow-right"
+            ><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg
+          >
+        </div>
+        <div
+          class="submenu max-h-0 overflow-hidden opacity-0 pl-4 space-y-2 text-gray-300 transition-all duration-500 ease-in-out"
+        >
+          <a href="#" class="block text-base hover:text-white">Overview</a>
+          <a href="#" class="block text-base hover:text-white">Features</a>
+          <a href="#" class="block text-base hover:text-white">Integrations</a>
+        </div>
       </div>
     </nav>
     <hr class="border-gray-500 my-6" />
@@ -711,5 +773,18 @@ import Logo from "../../assets/Zyntics-logo.png";
     } else {
       navbar.classList.remove("md:sticky", "md:top-0", "shadow-md");
     }
+  });
+  document.querySelectorAll('[data-toggle="menu"]').forEach((toggleBtn) => {
+    toggleBtn.addEventListener("click", () => {
+      const submenu = toggleBtn.nextElementSibling as HTMLElement;
+
+      const isOpen = submenu.classList.contains("submenu-open");
+      submenu.style.maxHeight = isOpen ? "0px" : submenu.scrollHeight + "px";
+      submenu.style.opacity = isOpen ? "0" : "1";
+      submenu.classList.toggle("submenu-open", !isOpen);
+
+      const chevron = toggleBtn.querySelector("[data-chevron]");
+      chevron?.classList.toggle("rotate-180", !isOpen);
+    });
   });
 </script>

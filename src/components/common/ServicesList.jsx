@@ -29,12 +29,6 @@ const services = [
     description:
       "Predictive analytics, automation tools, and decision-making engines.",
   },
-  {
-    number: "06",
-    title: "Hire Developers",
-    description:
-      "Scale your team with remote specialists in frontend, backend, AI/ML, mobile, or full-stack.",
-  },
 ];
 
 const ArrowRightIcon = () => (
@@ -61,12 +55,12 @@ const ServicesList = () => {
       <div className="w-full space-y-6">
         {services.map((service, index) => (
           <div key={index}>
-            <div className="group grid grid-cols-1 md:grid-cols-[50px_400px_1fr_auto] lg:grid-cols-[90px_500px_1fr_auto] gap-4 items-start py-4">
-              <span className="zyntics-h2 font-bold text-gray-600 group-hover:text-[#5057E6]">
+            <div className="group grid grid-cols-1 md:grid-cols-[50px_400px_1fr_auto] lg:grid-cols-[90px_500px_1fr_auto] gap-2 lg:gap-4 items-center justify-start py-4">
+              <span className="zyntics-h2 font-bold text-gray-600 group-hover:text-[#5057E6] py-2">
                 {service.number}
               </span>
 
-              <h3 className="zyntics-h3 font-bold text-gray-800 text-left md:px-10">
+              <h3 className="zyntics-h3 font-bold text-gray-800 text-left md:px-10 ">
                 {service.title}
               </h3>
 

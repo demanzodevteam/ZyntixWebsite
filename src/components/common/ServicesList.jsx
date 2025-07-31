@@ -1,33 +1,33 @@
 const services = [
   {
     number: "01",
-    title: "Website Development",
-    description:
-      "Fast, SEO-friendly websites with clean code and high conversion intent.",
-  },
-  {
-    number: "02",
     title: "Mobile App Development",
     description:
       "Cross-platform mobile apps built using Flutter and React Native.",
   },
   {
-    number: "03",
+    number: "02",
     title: "E-commerce Development",
     description:
       "Custom storefronts, marketplaces, and headless commerce platforms.",
   },
   {
-    number: "04",
+    number: "03",
     title: "Enterprise Solutions",
     description:
       "Secure portals, dashboards, APIs, and workflow tools for internal operations.",
   },
   {
-    number: "05",
+    number: "04",
     title: "AI & ML Solutions",
     description:
       "Predictive analytics, automation tools, and decision-making engines.",
+  },
+  {
+    number: "05",
+    title: "Website Development",
+    description:
+      "Fast, SEO-friendly websites with clean code and high conversion intent.",
   },
 ];
 

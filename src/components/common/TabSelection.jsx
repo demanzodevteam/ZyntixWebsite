@@ -61,12 +61,12 @@ const TabSelection = ({ onImageChange }) => {
   return (
     <div className="flex flex-col gap-6 w-full max-w-md">
       {/* Tab Buttons */}
-      <div className="flex flex-nowrap justify-start items-center gap-2 bg-white rounded-md shadow-md border border-gray-200 w-full p-2 sm:p-3 overflow-x-auto">
-        {tabs.slice(0, 3).map((tab) => (
+      <div className="grid grid-cols-3 gap-2 bg-white rounded-md shadow-md border border-gray-200 w-full p-2 sm:p-3">
+        {tabs.map((tab) => (
           <button
             key={tab.id}
-            className={`flex-shrink-0 flex items-center gap-2 font-semibold px-3 sm:px-5 py-2 rounded-md whitespace-nowrap
-        text-[clamp(0.65rem,3vw,0.85rem)] 
+            className={`flex items-center justify-center gap-2 font-semibold w-full px-4 sm:px-4 py-2 rounded-md
+        text-[clamp(0.65rem,3vw,0.85rem)] whitespace-nowrap
         ${
           activeTab === tab.id
             ? "bg-gradient-to-r from-[#0b147c] to-[#4b1bac] text-white"

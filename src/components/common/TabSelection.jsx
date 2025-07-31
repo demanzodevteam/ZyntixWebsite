@@ -61,7 +61,7 @@ const TabSelection = ({ onImageChange }) => {
   return (
     <div className="flex flex-col gap-6 w-full max-w-md">
       {/* Tab Buttons */}
-      <div className="grid grid-cols-3 gap-2 bg-white rounded-md shadow-md border border-gray-200 w-full p-2 sm:p-3 ">
+      <div className="grid grid-cols-3 gap-2 bg-white rounded-md shadow-md border  border-gray-300 w-full p-2 sm:p-3 ">
         {tabs.map((tab) => (
           <button
             key={tab.id}

@@ -32,7 +32,7 @@ const IntegrationSection = () => {
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 justify-items-center text-center">
         {services.map((service) => (
           <div
-            className="transform transition-transform duration-500 ease-in-out hover:translate-y-6"
+            className="transform transition-transform duration-500 ease-in-out hover:translate-y-4 lg:hover:translate-y-6"
             key={service.name}
           >
             <img

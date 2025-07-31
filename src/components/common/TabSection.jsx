@@ -26,7 +26,7 @@ const TabSection = () => {
           </p>
 
           {/* Pass image setter to tab */}
-          <TabSelection onImageChange={setCurrentImage} />
+          <TabSelection onImageChange={setCurrentImage} client:load/>
         </div>
 
         {/* Right Column - Image updates with tab */}

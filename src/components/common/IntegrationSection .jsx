@@ -5,7 +5,7 @@ import Slack from "../../assets/react.png";
 import Wordpress from "../../assets/wordpress.png";
 import Nestjs from "../../assets/nestjs.png";
 // import Nestjs from "../../assets/Symbol Alternative.svg";
-import Typescript from "../../assets/typescript.png";
+import Typescript from "../../assets/typescript.webp";
 import Shopify from "../../assets/shopify.png";
 
 const services = [

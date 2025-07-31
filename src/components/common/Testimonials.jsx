@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const testimonials = [
   {
@@ -12,28 +13,45 @@ const testimonials = [
     name: "John Smith",
     position: "CTO, TechCorp",
     comment:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)....",
+      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose",
     image: "https://randomuser.me/api/portraits/men/46.jpg",
   },
   {
     name: "Lisa Ray",
     position: "UX Designer",
     comment:
-      "n slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model senten",
     image: "https://randomuser.me/api/portraits/women/68.jpg",
   },
 ];
 
 export default function Testimonials() {
   const [index, setIndex] = useState(0);
+  const [direction, setDirection] = useState(0); // 1 for right, -1 for left
 
   const updateIndex = (newIndex) => {
+    setDirection(newIndex > index ? -1 : 1);
     setIndex((newIndex + testimonials.length) % testimonials.length);
   };
 
+  const variants = {
+    enter: (direction) => ({
+      x: direction > 0 ? 300 : -300,
+      opacity: 0,
+    }),
+    center: {
+      x: 0,
+      opacity: 1,
+    },
+    exit: (direction) => ({
+      x: direction > 0 ? -300 : 300,
+      opacity: 0,
+    }),
+  };
+
   return (
-    <section className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-20 items-start">
-      {/* Left: Images horizontally + Name/Position */}
+    <section className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-6 md:gap-10 lg:gap-20 items-start">
+      {/* Left: Images */}
       <div className="flex flex-col items-center space-y-5">
         <div className="flex gap-5 flex-wrap justify-center">
           {testimonials.map((t, i) => (
@@ -44,7 +62,7 @@ export default function Testimonials() {
                   ? "border-blue-600"
                   : "grayscale opacity-50 border-gray-300 hover:opacity-100 hover:grayscale-0 hover:border-blue-500"
               }`}
-              onClick={() => setIndex(i)}
+              onClick={() => updateIndex(i)}
               src={t.image}
               alt={t.name}
             />
@@ -60,13 +78,24 @@ export default function Testimonials() {
         </div>
       </div>
 
-      {/* Right: Comment + Arrows */}
-      <div className="relative text-center md:text-left">
-        <p className="zyntics-h6 !text-gray-800 transition-all duration-300">
-          “{testimonials[index].comment}”
-        </p>
+      {/* Right: Animated Comment + Buttons */}
+      <div className="relative text-center md:text-left overflow-hidden px-1">
+        <AnimatePresence mode="wait" custom={direction}>
+          <motion.p
+            key={index}
+            className="zyntics-h6 !text-gray-800  w-full"
+            custom={direction}
+            variants={variants}
+            initial="enter"
+            animate="center"
+            exit="exit"
+            transition={{ duration: 0.5 }}
+          >
+            “{testimonials[index].comment}”
+          </motion.p>
+        </AnimatePresence>
 
-        <div className="flex justify-center md:justify-start gap-4 mt-6">
+        <div className="flex justify-center md:justify-start gap-4 mt-10 relative z-10">
           <button
             onClick={() => updateIndex(index - 1)}
             className="w-14 h-10 rounded-lg bg-white border shadow hover:bg-gray-200 flex items-center justify-center hover:cursor-pointer"

@@ -1,12 +1,28 @@
-import React, { useState } from "react";
+import React, { useState ,useEffect} from "react";
 import Logo from "../../assets/Zyntics-logo.png";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isTabletMenuOpen, setTabletMenuOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState(null);
+  const [isCloseIconRotating, setIsCloseIconRotating] = useState(false);
 
+  useEffect(() => {
+    if (isMobileMenuOpen, isTabletMenuOpen) {
+      setIsCloseIconRotating(true);
+      setTimeout(() => setIsCloseIconRotating(false), 600);
+    }
+  }, [isMobileMenuOpen, isTabletMenuOpen]);
 
+  const handleCloseMenuWithSpin = () => {
+    setIsCloseIconRotating(true);
+    setTimeout(() => {
+      setMobileMenuOpen(false);
+      setTabletMenuOpen(false);
+      setIsCloseIconRotating(false);
+      document.body.style.overflow = "";
+    }, 600); // Match this to your animation duration
+  };
 
   const toggleMenu = (menuId) => {
     setActiveMenu((prev) => (prev === menuId ? null : menuId));
@@ -85,7 +101,6 @@ const Navbar = () => {
 
           {/* Right: Desktop Icons */}
           <div className="hidden md:flex items-center space-x-4">
-  
             {/* Tablet Menu Toggle Button (for md only) */}
             <button
               id="tablet-menu-toggle"
@@ -155,10 +170,11 @@ const Navbar = () => {
           <h1 className="text-4xl font-extrabold">Zyntics</h1>
           <button
             id="mobile-menu-close"
-            className={`transition-transform duration-1000 `}
-            onClick={closeMenu}
+            onClick={handleCloseMenuWithSpin}
+            className={`transition-transform duration-700 ${
+              isCloseIconRotating ? "rotate-[360deg]" : ""
+            }`}
           >
-            {/* Close icon */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-7 w-7 hover:cursor-pointer"
@@ -774,9 +790,11 @@ const Navbar = () => {
             <div className="flex justify-end items-center gap-2">
               <span className="text-gray-200 text-xl">Close</span>
               <button
-                id="tablet-menu-close"
-                className="text-white focus:outline-none transition-transform duration-500 ease-in-out"
-                onClick={closeTabletMenu}
+                id="mobile-menu-close"
+                onClick={handleCloseMenuWithSpin}
+                className={`transition-transform duration-700 ${
+                  isCloseIconRotating ? "rotate-[360deg]" : ""
+                }`}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

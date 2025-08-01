@@ -22,9 +22,9 @@ const IntegrationSection = () => {
       {/* Heading */}
       <div>
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-normal leading-tight">
-          End-to-End Stack for Agile
+          End-to-End stack for agile
           <br className="hidden sm:block" />
-          Product Delivery
+          product delivery
         </h2>
       </div>
 

@@ -1,5 +1,5 @@
 import React, { useState ,useEffect} from "react";
-import Logo from "../../assets/Zyntics-logo.png";
+import Logo from "../../../assets/Zyntics-logo.png";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);

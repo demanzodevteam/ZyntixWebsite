@@ -1,5 +1,5 @@
 ---
-
+import Logo from '../../assets/Zyntics-logo.png';
 
 ---
 
@@ -44,9 +44,13 @@
 
   <!-- Navigation bar -->
   <nav class="max-w-[1200px] mx-auto mt-4 bg-gradient-to-r from-[#f3e9f9] to-[#e6f0f7] border border-gray-300 rounded-[20px] px-6 py-4 flex flex-wrap items-center justify-between">
-   <div class="font-montserrat font-bold text-xl select-none">
-    Zyntics
-   </div>
+   <a href="#" class="text-xl font-bold">
+              <img
+                src={Logo.src}
+                alt="Logo"
+                class="w-[170px] md:w-[190px] lg:w-[200px]"
+              />
+            </a>
    <ul class="flex flex-wrap gap-4 text-sm font-normal text-black">
     <li>
      <a class="hover:underline" href="#">

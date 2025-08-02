@@ -1,4 +1,5 @@
 import React from "react";
+import logo from '../../assets/zyn-blured-logo.webp'
 
 const WhyWeNeed = ({data}) => {
   return (
@@ -14,7 +15,7 @@ const WhyWeNeed = ({data}) => {
             </div>
             <div className="">
               <img
-                src="https://8ded8880.delivery.rocketcdn.me/themes/aiero/wp-content/uploads/2024/12/XXX.png"
+                src={logo.src}
                 alt="xxx"
                 className="w-[150px] h-[150px] object-contain "
               />

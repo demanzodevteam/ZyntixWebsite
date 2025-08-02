@@ -11,10 +11,10 @@ const WhatWeOffer = ({ content }) => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 h-auto lg:h-full">
               <div className="bg-[#4F57E3] text-white p-6 flex items-center justify-center">
                 <div>
-                  <p className="text-xs uppercase font-normal mb-3">
+                  <p className="zyntics-small-p uppercase font-normal mb-3">
                     {content.blockLabel}
                   </p>
-                  <h2 className="font-extrabold text-xl leading-tight whitespace-pre-line">
+                  <h2 className="font-extrabold text-p leading-tight whitespace-pre-line">
                     {content.blockHeading}
                   </h2>
                 </div>
@@ -41,14 +41,14 @@ const WhatWeOffer = ({ content }) => {
           {/* Right Section */}
           <div className="lg:col-span-6 flex flex-col justify-center space-y-8">
             <div className="mt-10 lg:mt-[250px]">
-              <p className="text-xs uppercase text-gray-500 font-semibold mb-2">
+              <p className="text-small-p uppercase text-gray-500 font-semibold mb-2">
                 {content.label}
               </p>
               <h1 className="text-h2 font-extrabold leading-tight text-gray-900">
                 {content.title}
               </h1>
               {content.description.map((text, i) => (
-                <p key={i} className="mt-4 text-sm text-gray-600 max-w-xl">
+                <p key={i} className="mt-4 zyntics-small-p text-gray-600 max-w-xl">
                   {text}
                 </p>
               ))}

@@ -12,6 +12,36 @@ body {
 
 /* variables */
 
+
+
+.zyntics-container-auto {
+  @apply mx-auto w-full max-w-[1400px] xl:max-w-[1420px] py-5 px-5 md:px-6 lg:px-6 xl:px-2;
+}
+.zyntics-container {
+  @apply !flex !justify-center items-center mx-auto px-10;
+}
+.zyntics-section {
+  @apply py-16 space-y-4 px-4;
+}
+
+
+.demanzo-header-container {
+  @apply !flex justify-between w-full items-center xl:mx-auto lg:mx-auto md:mx-auto md:px-10;
+}
+
+.demanzo-grid {
+  @apply grid grid-cols-1 lg:grid-cols-[1fr_0.8fr] gap-2 bg-no-repeat bg-bottom bg-cover;
+}
+
+.zyntics-max-screen-width {
+  @apply w-[1400px] max-w-full;
+}
+
+.demanzo-accordian-heading {
+  @apply text-[16px] font-[600] px-3 py-3 rounded-sm;
+}
+
+
 .text-h1 {
   @apply text-[35px] md:text-[64px] lg:text-[80px];
 }

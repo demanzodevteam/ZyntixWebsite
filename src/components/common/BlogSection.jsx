@@ -31,7 +31,7 @@ const BlogSection = () => {
   ];
 
   return (
-    <div className="max-w-[1300px] mx-auto px-6 py-10">
+    <div className="zyntics-container-auto px-6 py-10">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
         <div>
           <p className="text-small-p font-normal text-black mb-1">[ blog ]</p>

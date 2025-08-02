@@ -3,7 +3,7 @@ import BannerBg from "../../assets/bannerbg.jpg";
 
 const PageBanner = () => {
   return (
-    <section className="max-w-[1450px] mx-auto mt-8 px mb-100 ">
+    <section className="zyntics-container-auto">
       <div
         className="relative overflow-hidden rounded-[30px] flex items-center justify-center border border-gray-300 longinverted-radius1"
         style={{

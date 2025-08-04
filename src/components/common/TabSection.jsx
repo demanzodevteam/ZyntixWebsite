@@ -8,7 +8,7 @@ const TabSection = () => {
 
   return (
     <section className="max-w-[1400px] mx-auto zyntics-section ">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 bg-[#F9FCFF] rounded-lg py-6 px-5 md:px-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 bg-[#F9FCFF] rounded-lg py-6 px-1 md:px-10">
         {/* Left Column */}
         <div className="flex flex-col relative items-start">
           <img

@@ -1,33 +1,42 @@
 ---
-import CardAnimated from "../../../common/CardAnimated";
- const items = [
+import ListCard from "../../../common/ListCard";
+
+const blogData = {
+  title: "latest works",
+  heading: "We’ve worked with clients across B2B, SaaS, and digital-first industries to deliver websites that perform under pressure.",
+  button: " Click to view all",
+  item: [
     {
-      tag: "Summary",
-      title: "Enterprise SaaS Redesign: Rebuilt a legacy website into a headless architecture—resulted in a 2.3x increase in qualified leads and 40% reduction in page load time.",
-      img: "https://8ded8880.delivery.rocketcdn.me/themes/aiero/wp-content/uploads/2024/12/deepvision-fi.jpg",
-      rightAction: "Discover",
-    },
-    {
-      tag: "Highlights",
       title:
-        "Multi-Location Business Portal: Developed a CMS-integrated web portal with multi-regional SEO strategy—achieved a 60% boost in organic visibility within 90 days.",
-      img: "https://8ded8880.delivery.rocketcdn.me/themes/aiero/wp-content/uploads/2024/12/image-min.jpg",
-      rightAction: "Discover",
+        "Redesigned and rebuilt a B2B enterprise website for a multinational logistics firm.",
+      img: "https://storage.googleapis.com/a1aa/image/9988944a-007a-46f4-8324-b5e330de3e20.jpg",
+      date: "2 Jan 2025",
+      author: "andrew",
+      tags: "/ B2B / Enterprise /",
+      alt: "Abstract",
     },
     {
-      tag: "Insights",
       title:
-        "B2B Marketing Microsite: Created a launch campaign microsite for a tech firm—CTR on paid ads improved by 3x and bounce rate dropped from 58% to 21%.",
-      img: "https://8ded8880.delivery.rocketcdn.me/themes/aiero/wp-content/uploads/2024/12/autodrive-autonomous-vehicle-navigation-fi.jpg",
-      rightAction: "Discover",
+        "Partnered with a fast-growing SaaS company to craft a high-performing website that increased signups by 60%",
+      img: "https://storage.googleapis.com/a1aa/image/fac6a693-d9cd-4a5c-56f5-604f0704402d.jpg",
+      date: "25 Dec 2024",
+      author: "andrew",
+      tags: "/ SaaS / Startup /",
+      alt: "Robot ",
     },
     {
-      tag: "Deep dive",
-      title:
-        "CogniCraft Innovations: Shaping the Future through Cutting-Edge AI Endeavors",
-      img: "https://8ded8880.delivery.rocketcdn.me/themes/aiero/wp-content/uploads/2024/12/project-single-bg-min.jpg",
-      rightAction: "Discover",
+      title: "Delivered a high-impact, fast-loading digital storefront for a wellness brand. ",
+      img: "https://storage.googleapis.com/a1aa/image/d4cc67a4-b6f3-4b37-644d-5adeb49528f6.jpg",
+      date: "25 Dec 2024",
+      author: "andrew",
+      tags: "/ Digital / D2C /",
+      alt: "Woman ",
     },
-  ];
+  ],
+};
 ---
-<CardAnimated sectionData={items} client:load/>
+
+<section class="bg-white text-black zyntics-section">
+  <ListCard SectionData={blogData} />
+</section>
+

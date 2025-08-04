@@ -1,42 +1,15 @@
 import React from "react";
 
-const BlogSection = () => {
-  const blogData = [
-    {
-      title:
-        "How can I get started with Artificial Intelligence for my business?",
-      img: "https://storage.googleapis.com/a1aa/image/9988944a-007a-46f4-8324-b5e330de3e20.jpg",
-      date: "2 Jan 2025",
-      author: "andrew",
-      tags: "/ AI Aiero / Technology /",
-      alt: "Abstract AI art with blue and pink swirls and black dots",
-    },
-    {
-      title:
-        "AI and Robotics: Advancing Automation and Human-Robot Collaboration",
-      img: "https://storage.googleapis.com/a1aa/image/fac6a693-d9cd-4a5c-56f5-604f0704402d.jpg",
-      date: "25 Dec 2024",
-      author: "andrew",
-      tags: "/ AI / Neural Networks /",
-      alt: "Robot head with blue eyes on gray background",
-    },
-    {
-      title: "How Natural Language Processing is revolutionizing Text Analysis",
-      img: "https://storage.googleapis.com/a1aa/image/d4cc67a4-b6f3-4b37-644d-5adeb49528f6.jpg",
-      date: "25 Dec 2024",
-      author: "andrew",
-      tags: "/ AI Services / AI Solutions /",
-      alt: "Woman with blonde ponytail looking at touchscreen interface",
-    },
-  ];
-
+const ListCard = ({ SectionData }) => {
   return (
     <div className="zyntics-container-auto px-6 py-10">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
         <div>
-          <p className="text-small-p font-normal text-black mb-1">[ blog ]</p>
-          <h1 className="text-h4 font-semibold leading-snug max-w-xl">
-            Exploring the world of artificial intelligence with Aiero blogging
+          <p className="text-small-p font-normal text-black mb-1">
+            [ {SectionData?.title} ]
+          </p>
+          <h1 className="text-h4 font-semibold leading-snug max-w-3xl">
+            {SectionData?.heading}
           </h1>
         </div>
         <div className="mt-6 md:mt-28">
@@ -45,7 +18,7 @@ const BlogSection = () => {
               aria-label="More articles"
               className="zyntics-small-p font-normal text-[#4B6CB7] bg-white rounded-2xl px-6 py-3 flex items-center gap-1 hover:bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 hover:text-white transition hover:cursor-pointer"
             >
-              More articles
+              {SectionData?.button}
               <i className="fas fa-arrow-right text-[10px]" />
             </button>
           </div>
@@ -53,7 +26,7 @@ const BlogSection = () => {
       </div>
 
       <section className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-        {blogData.map((post, idx) => (
+        {SectionData?.item?.map((post, idx) => (
           <article
             key={idx}
             className="border border-[#E6E6E6] rounded-lg overflow-hidden group"
@@ -85,5 +58,4 @@ const BlogSection = () => {
   );
 };
 
-export default BlogSection;
-
+export default ListCard;

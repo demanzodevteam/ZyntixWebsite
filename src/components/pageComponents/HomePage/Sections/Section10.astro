@@ -1,6 +1,41 @@
 ---
-import BlogSection from "../../../common/BlogSection"
+import ListCard from "../../../common/ListCard";
+
+const blogData = {
+  title: "blog",
+  heading: "Exploring the world of artificial intelligence with Aiero blogging",
+  button: " More articles",
+  item: [
+    {
+      title:
+        "How can I get started with Artificial Intelligence for my business?",
+      img: "https://storage.googleapis.com/a1aa/image/9988944a-007a-46f4-8324-b5e330de3e20.jpg",
+      date: "2 Jan 2025",
+      author: "andrew",
+      tags: "/ AI Aiero / Technology /",
+      alt: "Abstract AI art with blue and pink swirls and black dots",
+    },
+    {
+      title:
+        "AI and Robotics: Advancing Automation and Human-Robot Collaboration",
+      img: "https://storage.googleapis.com/a1aa/image/fac6a693-d9cd-4a5c-56f5-604f0704402d.jpg",
+      date: "25 Dec 2024",
+      author: "andrew",
+      tags: "/ AI / Neural Networks /",
+      alt: "Robot head with blue eyes on gray background",
+    },
+    {
+      title: "How Natural Language Processing is revolutionizing Text Analysis",
+      img: "https://storage.googleapis.com/a1aa/image/d4cc67a4-b6f3-4b37-644d-5adeb49528f6.jpg",
+      date: "25 Dec 2024",
+      author: "andrew",
+      tags: "/ AI Services / AI Solutions /",
+      alt: "Woman with blonde ponytail looking at touchscreen interface",
+    },
+  ],
+};
 ---
+
 <section class="bg-white text-black zyntics-section">
-    <BlogSection />
- </section>
+  <ListCard SectionData={blogData} />
+</section>

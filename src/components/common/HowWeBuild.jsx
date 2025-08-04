@@ -157,7 +157,7 @@ const HowWeBuild = () => {
         </div>
 
         {/* Grid Content with Framer Motion */}
-        <div ref={containerRef} className="relative h-[210vh] px-4 sm:px-10 grid grid-cols-1 gap-6 pb-12">
+        <div ref={containerRef} className="relative   px-4 sm:px-10 grid grid-cols-1 gap-6 pb-12">
           {items.map((item, i) => {
             const targetScale = 1 - (items.length - i) * 0.05;
             const scale = useTransform(
@@ -182,14 +182,14 @@ const HowWeBuild = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/50 to-black/30 rounded-xl z-0"></div>
                 {/* Content */}
                 <div className="relative z-10 flex flex-col sm:flex-row sm:items-center justify-between w-full gap-4 sm:gap-0 px-2 sm:px-6 py-2">
-                  <div>
+                  <div >
                     <a
                       href="#"
                       className="text-[12px] font-semibold uppercase tracking-widest border border-blue-500 px-4 py-2 rounded-full hover:bg-gradient-to-r from-[#18C1FC] to-[#9F7CFE]"
                     >
                       {item.tag}
                     </a>
-                    <div className="text-h5 font-normal leading-normal mt-4 sm:max-w-[60%]">
+                    <div className="text-h5 font-normal leading-normal mt-4 sm:max-w-[100%]">
                       {item.title}
                     </div>
                   </div>

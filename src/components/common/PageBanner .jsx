@@ -10,7 +10,7 @@ const PageBanner = ({sectionData}) => {
       >
         <img
           alt="BannerBg"
-          className="w-full h-[350px] md:h-[600px] object-cover rounded-[30px] relative z-0 longinverted-radius1"
+          className="w-full h-[350px] md:h-[530px] object-cover rounded-[30px] relative z-0 longinverted-radius1"
           src={BannerBg.src}
           width="1200"
           height="300"

@@ -1,36 +1,3 @@
-const services = [
-  {
-    number: "01",
-    title: "Mobile App Development",
-    description:
-      "Cross-platform mobile apps built using Flutter and React Native.",
-  },
-  {
-    number: "02",
-    title: "E-commerce Development",
-    description:
-      "Custom storefronts, marketplaces, and headless commerce platforms.",
-  },
-  {
-    number: "03",
-    title: "Enterprise Solutions",
-    description:
-      "Secure portals, dashboards, APIs, and workflow tools for internal operations.",
-  },
-  {
-    number: "04",
-    title: "AI & ML Solutions",
-    description:
-      "Predictive analytics, automation tools, and decision-making engines.",
-  },
-  {
-    number: "05",
-    title: "Website Development",
-    description:
-      "Fast, SEO-friendly websites with clean code and high conversion intent.",
-  },
-];
-
 const ArrowRightIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -49,11 +16,11 @@ const ArrowRightIcon = () => (
   </svg>
 );
 
-const ServicesList = () => {
+const ServicesList = ({ SectionData }) => {
   return (
     <div className="max-w-7xl mx-auto space-y-6 px-4">
       <div className="w-full space-y-6">
-        {services.map((service, index) => (
+        {SectionData?.items?.map((service, index) => (
           <div key={index}>
             <div className="group grid grid-cols-1 md:grid-cols-[50px_400px_1fr_auto] lg:grid-cols-[90px_500px_1fr_auto] gap-2 lg:gap-4 items-center justify-start py-4">
               <span className="zyntics-h2 font-bold text-gray-600 group-hover:text-[#5057E6] py-2">

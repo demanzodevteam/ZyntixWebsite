@@ -2,8 +2,8 @@ import React from "react";
 
 const InsightSection = ({ SectionData}) => {
   return (
-    <div className="zyntics-section zyntics-container-auto bg-[#333333] rounded-2xl ">
-      <div className="py-8">
+    <div className=" zyntics-container-auto">
+      <div className="bg-[#333333] zyntics-section rounded-2xl">
         <div className="max-w-7xl mx-auto rounded-xl overflow-hidden flex flex-col md:flex-row bg-[#222222] text-white">
           {/* Image Side */}
           <div className="md:w-1/2 relative">

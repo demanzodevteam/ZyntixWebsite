@@ -1,4 +1,33 @@
 ---
-import HowWeBuild from "../../../common/HowWeBuild";
+import CardAnimated from "../../../common/CardAnimated";
+ const items = [
+    {
+      tag: "Summary",
+      title: "Enterprise SaaS Redesign: Rebuilt a legacy website into a headless architecture—resulted in a 2.3x increase in qualified leads and 40% reduction in page load time.",
+      img: "https://8ded8880.delivery.rocketcdn.me/themes/aiero/wp-content/uploads/2024/12/deepvision-fi.jpg",
+      rightAction: "Discover",
+    },
+    {
+      tag: "Highlights",
+      title:
+        "Multi-Location Business Portal: Developed a CMS-integrated web portal with multi-regional SEO strategy—achieved a 60% boost in organic visibility within 90 days.",
+      img: "https://8ded8880.delivery.rocketcdn.me/themes/aiero/wp-content/uploads/2024/12/image-min.jpg",
+      rightAction: "Discover",
+    },
+    {
+      tag: "Insights",
+      title:
+        "B2B Marketing Microsite: Created a launch campaign microsite for a tech firm—CTR on paid ads improved by 3x and bounce rate dropped from 58% to 21%.",
+      img: "https://8ded8880.delivery.rocketcdn.me/themes/aiero/wp-content/uploads/2024/12/autodrive-autonomous-vehicle-navigation-fi.jpg",
+      rightAction: "Discover",
+    },
+    {
+      tag: "Deep dive",
+      title:
+        "CogniCraft Innovations: Shaping the Future through Cutting-Edge AI Endeavors",
+      img: "https://8ded8880.delivery.rocketcdn.me/themes/aiero/wp-content/uploads/2024/12/project-single-bg-min.jpg",
+      rightAction: "Discover",
+    },
+  ];
 ---
-<HowWeBuild client:load/>
+<CardAnimated sectionData={items} client:load/>

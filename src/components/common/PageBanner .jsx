@@ -18,7 +18,7 @@ const PageBanner = ({sectionData}) => {
           width="1200"
           height="300"
         />
-        <h1 className="absolute z-20 text-white text-3xl md:text-6xl font-semibold select-none">
+        <h1 className="absolute z-20 text-white text-h2 font-semibold select-none">
           {sectionData?.title}
         </h1>
       </div>

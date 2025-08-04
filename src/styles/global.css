@@ -92,7 +92,7 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 .zyntics-h6 {
-  @apply text-[18px] sm:text-[18px] md:text-[24px] lg:text-[28px];
+  @apply text-[18px] sm:text-[18px] md:text-[22px] lg:text-[24px];
   font-family: "DM Sans", sans-serif;
 }
 .zyntics-p {

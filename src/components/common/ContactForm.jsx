@@ -19,9 +19,9 @@ export default function ContactForm() {
   };
 
   const handleSubmit = (e) => {
+    e.preventDefault();
     setError("");
     setSuccess("");
-    e.preventDefault();
     if (
       form.name.trim() == "" ||
       form.email.trim() == "" ||
@@ -33,13 +33,11 @@ export default function ContactForm() {
 
     setLoading(true);
     try {
-      console.log("Form Submitted:", form);
-      setForm({
-        name: "",
-        email: "",
-        message: "",
-      });
-      setSuccess("Submitted Successfully!");
+      setTimeout(() => {
+        console.log("Form Submitted:", form);
+        setForm({ name: "", email: "", message: "" });
+        setSuccess("Submitted Successfully!");
+      }, 1500);
     } catch (error) {
       console.log(error);
     } finally {
@@ -138,10 +136,14 @@ export default function ContactForm() {
               </button>
             </div>
             {error && (
-              <p className="text-sm text-center text-red-500">{error}</p>
+              <div className="flex items-center gap-2 text-sm text-red-500 justify-center">
+                {error}
+              </div>
             )}
             {success && (
-              <p className="text-sm text-center text-green-500">{success}</p>
+              <div className="flex items-center gap-2 text-sm text-green-600 justify-center">
+                {success}
+              </div>
             )}
           </form>
         </div>

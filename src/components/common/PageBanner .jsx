@@ -3,28 +3,25 @@ import BannerBg from "../../assets/bannerbg.jpg";
 
 const PageBanner = ({sectionData}) => {
   return (
-    <section className="zyntics-container-auto relative">
+    <section className="zyntics-container-auto !pb-16 relative">
       <div
-        className="relative overflow-hidden rounded-[30px] flex items-center justify-center border border-gray-300 longinverted-radius1"
-        style={{
-          background:
-            "linear-gradient(90deg, rgba(0,0,0,0.5), rgba(0,0,0,0.2))",
-        }}
+        className="relative overflow-hidden rounded-[30px] flex items-center justify-center border border-gray-300 "
+       
       >
         <img
           alt="BannerBg"
-          className="w-full h-[350px] md:h-[550px] object-cover rounded-[30px] relative z-0"
+          className="w-full h-[350px] md:h-[600px] object-cover rounded-[30px] relative z-0 longinverted-radius1"
           src={BannerBg.src}
           width="1200"
           height="300"
         />
-        <h1 className="absolute z-20 text-white text-h2 font-semibold select-none">
+        <h1 className="absolute z-20 text-white text-2xl md:text-5xl font-semibold select-none">
           {sectionData?.title}
         </h1>
       </div>
 
       {/* Breadcrumb moved outside but absolutely positioned over masked area */}
-      <div className="absolute bottom-10 left-8 z-50 text-md text-gray-700 font-semibold select-none">
+      <div className="absolute bottom-22 left-8 z-50 text-md text-gray-700 font-semibold select-none">
         <a className="border-b-2 border-gray-700 pb-[2px]  transition" href="#">
           Home
         </a>{" "}
@@ -52,6 +49,7 @@ const PageBanner = ({sectionData}) => {
         var(--_g) 0 calc(-1 * var(--_d) - var(--y));
       mask-repeat: no-repeat;
     }
+      
         `}
       </style>
     </section>

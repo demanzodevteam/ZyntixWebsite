@@ -8,7 +8,7 @@ const WhatWeOffer = ({ content }) => {
           {/* Left Section (mobile: normal, desktop: sticky) */}
           <div className="lg:col-span-6 lg:sticky lg:top-10 h-auto lg:h-screen flex flex-col gap-4">
             {/* Top block with heading and image (mobile stacked) */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 h-auto lg:h-full">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 h-100 ">
               <div className="bg-[#4F57E3] text-white p-6 flex items-center justify-center">
                 <div>
                   <p className="zyntics-small-p uppercase font-normal mb-3">
@@ -23,7 +23,7 @@ const WhatWeOffer = ({ content }) => {
                 <img
                   src={content.topImage}
                   alt="Top visual"
-                  className="w-full h-full object-cover"
+                  className="w-full h-100 object-cover"
                 />
               </div>
             </div>

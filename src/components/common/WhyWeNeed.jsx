@@ -4,7 +4,7 @@ import logo from '../../assets/zyn-blured-logo.webp'
 const WhyWeNeed = ({data}) => {
   return (
     <div className="zyntics-section  bg-gradient-to-br from-white to-[#f3f1ff]">
-      <div className="relative flex items-center justify-center py-12 px-">
+      <div className="relative flex items-center justify-center ">
         <div className="zyntics-container-auto grid grid-rows-[auto_auto] gap-6 md:gap-10 lg:gap-20">
           {/* Top Row */}
           <div class="w-full flex flex-col md:flex-row justify-between md:items-center ">

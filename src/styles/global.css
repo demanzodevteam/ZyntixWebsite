@@ -15,7 +15,7 @@ body {
 
 
 .zyntics-container-auto {
-  @apply mx-auto w-full max-w-[1400px] xl:max-w-[1420px] py-5 px-5 md:px-6 lg:px-6 xl:px-2;
+  @apply mx-auto w-full max-w-[1400px] xl:max-w-[1420px] py-5 px-3 md:px-6 lg:px-6 xl:px-2;
 }
 .zyntics-container {
   @apply !flex !justify-center items-center mx-auto px-10;
@@ -92,7 +92,7 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 .zyntics-h6 {
-  @apply text-[14px] sm:text-[15px] md:text-[16px] lg:text-[22px];
+  @apply text-[18px] sm:text-[18px] md:text-[24px] lg:text-[28px];
   font-family: "DM Sans", sans-serif;
 }
 .zyntics-p {

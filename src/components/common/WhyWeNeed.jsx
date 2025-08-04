@@ -4,12 +4,12 @@ import logo from '../../assets/zyn-blured-logo.webp'
 const WhyWeNeed = ({data}) => {
   return (
     <div className="zyntics-section  bg-gradient-to-br from-white to-[#f3f1ff]">
-      <div className="relative flex items-center justify-center py-12 px-6">
+      <div className="relative flex items-center justify-center py-12 px-">
         <div className="zyntics-container-auto grid grid-rows-[auto_auto] gap-6 md:gap-10 lg:gap-20">
           {/* Top Row */}
           <div class="w-full flex flex-col md:flex-row justify-between md:items-center ">
             <div className="">
-              <h1 class="text-h2 leading-tight font-semibold text-black max-w-5xl">
+              <h1 class="text-h2 leading-tight font-semibold text-black max-w-6xl">
                 {data?.title}
               </h1>
             </div>
@@ -31,7 +31,7 @@ const WhyWeNeed = ({data}) => {
               {data?.heading}
             </h2>
 
-            <div className="flex flex-col !text-[#1a1a1a] zyntics-p">
+            <div className="flex flex-col !text-[#1a1a1a] zyntics-h6">
               <p className="font-semibold mb-3 leading-tight">
                 {data?.para1}
               </p>

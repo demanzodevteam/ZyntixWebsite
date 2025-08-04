@@ -32,13 +32,15 @@ const ListCard = ({ SectionData }) => {
             className="border border-[#E6E6E6] rounded-lg overflow-hidden group"
           >
             <div className="relative">
-              <img
-                src={post.img}
-                alt={post.alt}
-                className="w-full h-[140px] md:h-[200px] object-cover rounded-t-lg transform transition-transform duration-500 ease-in-out group-hover:scale-110"
-                width={400}
-                height={220}
-              />
+              <div className="group overflow-hidden">
+                <img
+                  src={post.img}
+                  alt={post.alt}
+                  className="w-full h-[140px] md:h-[200px] object-cover rounded-t-lg transform transition-transform duration-500 ease-in-out group-hover:scale-110"
+                  width={400}
+                  height={220}
+                />
+              </div>
               <div className="absolute bottom-2 left-2 bg-white zyntics-small-p text-[#4B4B4B] rounded-full px-3 py-0.5 font-normal max-w-max">
                 {post.date} / {post.author}
               </div>

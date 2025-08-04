@@ -2,45 +2,38 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
+import Desinologo from "../../assets/desino-logo.png";
+import Embitellogo from "../../assets/embitel.png"
+import Finoslogo from "../../assets/Finos-logo.svg"
+import Flivelogo from "../../assets/flive-logo.webp"
+import Onecliklogo from "../../assets/one-click-logo.webp"
+import Primepath from "../../assets/Prime-path-Logo.png"
+import Rdslogo from "../../assets/rds-logo.png"
+import Visalogo from "../../assets/VisaTheory-logo.webp"
 
 
 const images = [
   {
-    src: "https://storage.googleapis.com/a1aa/image/2db2664d-7c84-4cb6-36b7-70689fc1a72c.jpg",
-    alt: "Business Team",
+    src: "../../assets/desicargarage-logo.webp",
+    alt: "Desicarlogo",
   },
-  {
-    src: "https://storage.googleapis.com/a1aa/image/d18c08c7-97bc-4e73-f817-f1264a6f9762.jpg",
-    alt: "Business Team",
-  },
-  {
-    src: "https://storage.googleapis.com/a1aa/image/8bf6c506-5549-44fe-fe52-c7fbfd92995e.jpg",
-    alt: "Startup Office",
-  },
-  {
-    src: "https://storage.googleapis.com/a1aa/image/507441d0-91ce-485f-c2cb-6da3b988a1f5.jpg",
-    alt: "Collaboration",
-  },
-  {
-    src: "https://storage.googleapis.com/a1aa/image/9980bc77-490b-4ef4-3141-0e2480b780a8.jpg",
-    alt: "Creative Team",
-  },
-  {
-    src: "https://storage.googleapis.com/a1aa/image/16a9708a-a40b-40a7-e5fc-43b319bce939.jpg",
-    alt: "Planning",
-  },
-  {
-    src: "https://storage.googleapis.com/a1aa/image/8bf6c506-5549-44fe-fe52-c7fbfd92995e.jpg",
-    alt: "Startup Office",
-  },
+  { src: Desinologo, alt: "Desinologo" },
+  { src: Embitellogo, alt: "Embitellogo" },
+  { src: Finoslogo, alt: "Finoslogo" },
+  { src: Flivelogo, alt: "Flivelogo" },
+  { src: Onecliklogo, alt: "Onecliklogo" },
+  { src: Primepath, alt: "Primepath" },
+  { src: Rdslogo, alt: "Rdslogo" },
+  { src: Visalogo, alt: "Visalogo" },
 ];
+
 
 export default function ImageSlider() {
   return (
     <div className="w-full">
       <div className="">
         <Swiper
-          modules={[Autoplay]}
+          modules={[]}
           loop={true}
           autoplay={{
             delay: 3000,

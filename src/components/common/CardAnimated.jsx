@@ -95,7 +95,6 @@
 
 // export default HowWeBuild;
 
-
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
@@ -129,7 +128,7 @@ const CardAnimated = ({ sectionData }) => {
         {/* Grid Content with Framer Motion */}
         <div
           ref={containerRef}
-          className="relative   px-4 sm:px-10 grid grid-cols-1 gap-6 pb-12"
+          className="relative px-4 sm:px-10 grid grid-cols-1 gap-6 pb-12"
         >
           {sectionData.map((item, i) => {
             const targetScale = 1 - (sectionData.length - i) * 0.05;
@@ -145,14 +144,20 @@ const CardAnimated = ({ sectionData }) => {
                 style={{
                   scale,
                   top: `calc(5% + ${i * 0}px)`,
-                  backgroundImage: `url(${item.img})`,
                 }}
-                className={`sticky z-20 rounded-xl min-h-[220px] md:h-90 bg-cover bg-center flex items-center p-4 md:p-6 text-white origin-top hover:scale-100 ${
-                  item.imgClasses || ""
-                }`}
+                className={`sticky z-20 rounded-xl min-h-[220px] md:h-90 overflow-hidden flex items-center p-4 md:p-6 text-white origin-top group`}
               >
+                {/* Background image with zoom-on-hover */}
+                <motion.div
+                  className={`absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110 ${
+                    item.imgClasses || ""
+                  }`}
+                  style={{ backgroundImage: `url(${item.img})` }}
+                />
+
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/50 to-black/30 rounded-xl z-0"></div>
+
                 {/* Content */}
                 <div className="relative z-10 flex flex-col sm:flex-row sm:items-center justify-between w-full gap-4 sm:gap-0 px-2 sm:px-6 py-2">
                   <div>

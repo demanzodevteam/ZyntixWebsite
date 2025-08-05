@@ -128,11 +128,38 @@ export default function ContactForm() {
               <button
                 type="submit"
                 disabled={loading}
-                className={`w-full px-4 py-2 text-white bg-[#181818] hover:bg-[#333333] focus:outline-none transition-colors duration-300 cursor-pointer ${
-                  loading ? "opacity-50 cursor-not-allowed" : ""
-                }`}
+                className={`group relative flex items-center justify-center gap-1 px-4 py-2 text-white bg-[#181818]
+                  hover:bg-[#333333] focus:outline-none transition-colors duration-300 cursor-pointer overflow-hidden ${
+                    loading ? "opacity-50 cursor-not-allowed" : ""
+                  }`}
               >
-                {loading ? "Submitting..." : "Submit"}
+                <span>
+                  {loading ? "Submitting..." : "Submit"}
+                </span>
+                {!loading && (
+                  <span className="relative mb-1 w-5 h-5 flex justify-center items-center">
+                    <span
+                      className="
+                        absolute left-0 right-0 flex justify-center
+                        transition-all duration-500 ease-in-out
+                        top-0
+                        group-hover:-translate-y-4 group-hover:opacity-0
+                      "
+                    >
+                      ➡
+                    </span>
+                    <span
+                      className="
+                        absolute left-0 right-0 flex justify-center
+                        transition-all duration-500 ease-in-out
+                        top-4 opacity-0
+                        group-hover:top-0 group-hover:opacity-100
+                      "
+                    >
+                      ➡
+                    </span>
+                  </span>
+                )}
               </button>
             </div>
             {error && (

@@ -6,7 +6,7 @@ const WhatWeOffer = ({ content }) => {
       <div className="zyntics-container-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-x-20 gap-y-8">
           {/* Left Section (mobile: normal, desktop: sticky) */}
-          <div className="lg:col-span-6 lg:sticky lg:top-10 h-auto lg:h-screen flex flex-col gap-4">
+          <div className="lg:col-span-6 lg:sticky lg:top-10 lg:h-screen flex flex-col gap-4 overflow-hidden">
             {/* Top block with heading and image (mobile stacked) */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 h-100 ">
               <div className="bg-[#4F57E3] text-white p-6 flex items-center justify-center">

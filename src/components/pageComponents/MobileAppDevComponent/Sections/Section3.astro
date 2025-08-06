@@ -1,0 +1,45 @@
+---
+import WhatWeOffer from "../../../common/WhatWeOffer.jsx";
+
+const content = {
+  blockLabel: "Finance",
+  blockHeading: `Expert guidance\nensuring\nfinancial stability`,
+  topImage: "https://storage.googleapis.com/a1aa/image/b2c6db50-1c0f-4f0d-a22e-a50c23ab720d.jpg",
+  bottomImage: "https://storage.googleapis.com/a1aa/image/2d090bd9-8a13-44a4-a006-2d6d75de6e7f.jpg",
+  label: "Nurturing success",
+  title: "WHAT WE DELIVER",
+  description: [
+    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Sed ut perspiciatis unde omnis iste.",
+    "Sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Sed ut perspiciatis unde omnis iste.",
+  ],
+  features: [
+    {
+      icon: "fas fa-clock",
+      title: "Custom Website Development",
+      description: "End-to-end development tailored to your business model, branding, and performance needs.",
+    },
+    {
+      icon: "fas fa-chart-bar",
+      title: "CMS & Headless CMS Builds",
+      description: "Flexible content systems using WordPress, Webflow, Strapi, or Sanity, optimized for speed and ease of management.",
+    },
+    {
+      icon: "fas fa-dollar-sign",
+      title: "Web Application Interfaces",
+      description: "User-focused frontend experiences for dashboards, customer portals, and internal tools.",
+    },
+    {
+      icon: "fas fa-dollar-sign",
+      title: "Website Redesign & Optimization",
+      description: "Transform underperforming or outdated websites into fast, conversion-ready digital assets.",
+    },
+    {
+      icon: "fas fa-dollar-sign",
+      title: "Landing Pages & Microsites",
+      description: "Campaign-specific pages designed to drive maximum engagement and lead generation.",
+    },
+  ]
+};
+---
+
+<WhatWeOffer content={content} client:visible />

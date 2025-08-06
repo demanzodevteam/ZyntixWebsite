@@ -18,7 +18,7 @@ const PageBanner = ({ sectionData }) => {
       </div>
 
       {/* Breadcrumb moved outside but absolutely positioned over masked area */}
-      <div className="absolute bottom-22 left-8 z-50 text-md text-gray-700 font-semibold select-none">
+      <div className="absolute bottom-22 left-8 z-39 text-md text-gray-700 font-semibold select-none">
         <a className="border-b-2 border-gray-700 pb-[2px]  transition" href="#">
           Home
         </a>{" "}

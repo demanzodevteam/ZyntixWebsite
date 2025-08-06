@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const ArrowRightIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -16,18 +18,38 @@ const ArrowRightIcon = () => (
   </svg>
 );
 
+const containerVariants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+};
+
 const ServicesList = ({ SectionData }) => {
   return (
-    <div className="max-w-7xl mx-auto space-y-6 px-4">
+    <motion.div
+      className="max-w-7xl mx-auto space-y-6 px-4"
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.2 }}
+    >
       <div className="w-full space-y-6">
         {SectionData?.items?.map((service, index) => (
-          <div key={index}>
+          <motion.div key={index} variants={itemVariants}>
             <div className="group grid grid-cols-1 md:grid-cols-[50px_400px_1fr_auto] lg:grid-cols-[90px_500px_1fr_auto] gap-2 lg:gap-4 items-center justify-start py-4">
               <span className="zyntics-h2 font-bold text-gray-600 group-hover:text-[#5057E6] py-2">
                 {service.number}
               </span>
 
-              <h3 className="zyntics-h3 font-bold text-gray-800 text-left md:px-10 ">
+              <h3 className="zyntics-h3 font-bold text-gray-800 text-left md:px-10">
                 {service.title}
               </h3>
 
@@ -37,17 +59,20 @@ const ServicesList = ({ SectionData }) => {
                 href="#"
                 className="w-14 h-14 flex items-center justify-center text-gray-600 text-xl font-bold border border-gray-300 rounded-full group-hover:border-gray-800 transition-all duration-300"
               >
-                <span className="block transform transition-transform duration-300 group-hover:-rotate-45">
+                <motion.span
+                  className="block transform transition-transform duration-300 group-hover:-rotate-45"
+                  whileHover={{ rotate: -45 }}
+                >
                   <ArrowRightIcon />
-                </span>
+                </motion.span>
               </a>
             </div>
 
             <hr className="mt-4 border-gray-300" />
-          </div>
+          </motion.div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

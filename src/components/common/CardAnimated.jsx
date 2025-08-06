@@ -112,15 +112,15 @@ const CardAnimated = ({ sectionData }) => {
         <div className="px-4 sm:px-10 flex flex-col md:flex-row md:items-start md:justify-between md:space-x-6 pt-8 sm:pt-12 space-y-4 md:space-y-0">
           <div className="md:flex-1">
             <p className="text-small-p font-semibold uppercase tracking-widest text-[#6B6B6B]">
-              [insights]
+              [{sectionData?.title}]
             </p>
             <h1 className="font-semibold text-h2 leading-relaxed">
-              How We Build
+              {sectionData?.heading}
             </h1>
           </div>
           <div className="flex justify-start md:justify-end">
             <button className="px-4 py-2 text-[12px] font-semibold rounded-full border border-white border-opacity-40 hover:border-opacity-100 transition duration-300 flex items-center">
-              View projects <i className="fas fa-arrow-right ml-2"></i>
+             {sectionData?.button}<i className="fas fa-arrow-right ml-2"></i>
             </button>
           </div>
         </div>
@@ -130,7 +130,7 @@ const CardAnimated = ({ sectionData }) => {
           ref={containerRef}
           className="relative px-4 sm:px-10 grid grid-cols-1 gap-6 pb-12"
         >
-          {sectionData.map((item, i) => {
+          {sectionData?.items?.map((item, i) => {
             const targetScale = 1 - (sectionData.length - i) * 0.05;
             const scale = useTransform(
               scrollYProgress,

@@ -1,6 +1,10 @@
 ---
 import CardAnimated from "../../../common/CardAnimated";
- const items = [
+ const data ={
+  title: "Our Latest Projects",
+  heading:"Case Studies",
+  button:"View All",
+  items:[
     {
       tag: "Summary",
       title: "Enterprise SaaS Redesign: Rebuilt a legacy website into a headless architecture—resulted in a 2.3x increase in qualified leads and 40% reduction in page load time.",
@@ -28,6 +32,7 @@ import CardAnimated from "../../../common/CardAnimated";
       img: "https://8ded8880.delivery.rocketcdn.me/themes/aiero/wp-content/uploads/2024/12/project-single-bg-min.jpg",
       rightAction: "Discover",
     },
-  ];
+  ],
+  }
 ---
-<CardAnimated sectionData={items} client:load/>
+<CardAnimated sectionData={data} client:load/>

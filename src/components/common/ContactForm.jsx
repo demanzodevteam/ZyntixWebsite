@@ -1,7 +1,8 @@
 import { useState } from "react";
 import map from "../../assets/Map.png";
+import { Section } from "lucide-react";
 
-export default function ContactForm() {
+export default function ContactForm({SectionData}) {
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -48,24 +49,16 @@ export default function ContactForm() {
 
   return (
     <div className=" zyntics-section zyntics-container-auto">
-     <div 
-  className="bg-contain bg-center bg-no-repeat z-10 w-full h-full" 
-  style={{ backgroundImage: `url(${map.src})` }}
->
+      <div
+        className="bg-contain bg-center bg-no-repeat z-10 w-full h-full"
+        style={{ backgroundImage: `url(${map.src})` }}
+      >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <h1 className="text-h3">Start With a Free Website Audit </h1>
-            <h3 className="zyntics-h6  my-6">
-              Not sure where your current site stands? We’ll review your site’s
-              structure, speed, SEO readiness, and user flow—then provide a
-              practical action plan. No cost, no commitment.{" "}
-            </h3>
-            <p className="zyntics-p my-6">
-              📞 Schedule a Free 30-Minute Consultation{" "}
-            </p>
-            <p className="zyntics-p  my-6">
-              📩 Or send us your brief—we respond within 24 hours.{" "}
-            </p>
+            <h1 className="text-h3">{SectionData.title} </h1>
+            <h3 className="zyntics-h6  my-6">{SectionData.description} </h3>
+            <p className="zyntics-p my-6">{SectionData.para1} </p>
+            <p className="zyntics-p  my-6">{SectionData.para2} </p>
           </div>
           <div className="relative">
             <form
@@ -129,12 +122,12 @@ export default function ContactForm() {
                 </label>
               </div>
 
-              <div className="p-[1px] rounded-lg bg-gradient-to-r from-[#4e54c8] to-[#8f94fb] inline-block">
+              <div className="p-[1px] rounded-lg bg-gradient-to-r from-[#11C3FF] to-[#AB76FF] inline-block">
                 <button
                   type="submit"
                   disabled={loading}
                   className={`group relative flex items-center justify-center gap-2 px-5 py-3 text-[14px] font-[500] bg-[#f0f2f4] rounded-lg p-4 text-black
-                  hover:bg-gradient-to-r from-[#4e54c8] to-[#8f94fb] hover:text-white focus:outline-none transition-colors duration-300 cursor-pointer overflow-hidden ${
+                  hover:bg-gradient-to-r from-[#11C3FF] to-[#AB76FF] hover:text-white focus:outline-none transition-colors duration-300 cursor-pointer overflow-hidden ${
                     loading ? "opacity-50 cursor-not-allowed" : ""
                   }`}
                 >

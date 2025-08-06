@@ -1,11 +1,32 @@
 ---
 import ImageSlider from "../../../common/ImageSlider";
+import Desicarlogo from "../../../../assets/desicargarage-logo.webp";
+import Desinologo from "../../../../assets/desino-logo.png";
+import Embitellogo from "../../../../assets/embitel.png";
+import Finoslogo from "../../../../assets/Finos-logo.svg";
+import Flivelogo from "../../../../assets/flive-logo.webp";
+import Onecliklogo from "../../../../assets/one-click-logo.webp";
+import Primepath from "../../../../assets/Prime-path-Logo.png";
+import Rdslogo from "../../../../assets/rds-logo.png";
+import Visalogo from "../../../../assets/VisaTheory-logo.webp";
 
+const images = [
+  { source: Desicarlogo, alt: "Desicarlogo" },
+  { source: Desinologo, alt: "Desinologo" },
+  { source: Embitellogo, alt: "Embitellogo" },
+  { source: Flivelogo, alt: "Flivelogo" },
+  { source: Onecliklogo, alt: "Onecliklogo" },
+  { source: Primepath, alt: "Primepath" },
+  { source: Rdslogo, alt: "Rdslogo" },
+  { source: Visalogo, alt: "Visalogo" },
+  // { source: Finoslogo, alt: "Finoslogo" },
+
+];
 ---
 <!------- Section 5 ------->
 
 <section class="zyntics-section bg-[#F6F6F6] text-center ">
   <div class="zyntics-container-auto ">
-  <ImageSlider client:load/>   
+  <ImageSlider sectionData={images} client:load/>   
   </div>
 </section>

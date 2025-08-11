@@ -67,7 +67,7 @@ const TestimonialGrid = () => {
   return (
     <div className=" zyntics-section zyntics-container-auto relative bg-gradient-to-b from-[#e9eef3] to-[#D9D9D9] rounded-4xl py-10 md:py-30 overflow-hidden">
       {/* Fading Overlay using blur + opacity */}
-      <div className="hidden md:block absolute bottom-0 left-0 w-full h-full bg-gradient-to-b from-transparent via-[#D9D9D9]/30 to-[#D9D9D9]/100 pointer-events-none z-20"></div>
+      <div className="hidden md:block absolute bottom-0 left-0 w-full h-full bg-gradient-to-b from-transparent via-[#D9D9D9]/30 to-[#D9D9D9]/100 pointer-events-none z-10"></div>
       {/* Heading */}
       <div className="text-center mb-6">
         <div className="text-yellow-400 text-xl mb-2">

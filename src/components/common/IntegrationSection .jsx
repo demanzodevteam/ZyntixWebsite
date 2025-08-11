@@ -46,22 +46,7 @@ const IntegrationSection = () => {
       </div>
 
       {/* Chevron Icon */}
-      <div className="absolute -bottom-2 -right-2 bg-[#45D0BD] text-black p-2 rounded-md shadow-md">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="lucide lucide-chevron-up"
-        >
-          <path d="m18 15-6-6-6 6" />
-        </svg>
-      </div>
+   
     </div>
   );
 };

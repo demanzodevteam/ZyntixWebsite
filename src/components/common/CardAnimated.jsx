@@ -112,15 +112,15 @@ const CardAnimated = ({ sectionData }) => {
         <div className="px-4 sm:px-10 flex flex-col md:flex-row md:items-start md:justify-between md:space-x-6 pt-8 sm:pt-12 space-y-4 md:space-y-0">
           <div className="md:flex-1">
             <p className="text-small-p font-semibold uppercase tracking-widest text-[#6B6B6B]">
-              [{sectionData?.title}]
+              [insights]
             </p>
             <h1 className="font-semibold text-h2 leading-relaxed">
-              {sectionData?.heading}
+              How We Build
             </h1>
           </div>
           <div className="flex justify-start md:justify-end">
             <button className="px-4 py-2 text-[12px] font-semibold rounded-full border border-white border-opacity-40 hover:border-opacity-100 transition duration-300 flex items-center">
-             {sectionData?.button}<i className="fas fa-arrow-right ml-2"></i>
+              View projects <i className="fas fa-arrow-right ml-2"></i>
             </button>
           </div>
         </div>

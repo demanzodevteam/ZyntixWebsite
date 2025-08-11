@@ -7,7 +7,7 @@ const PageBanner = ({ sectionData }) => {
       <div className="relative overflow-hidden rounded-[30px] flex items-center justify-center border border-gray-300 ">
         <img
           alt="BannerBg"
-          className="w-full h-[350px] md:h-[530px] object-cover rounded-[30px] relative z-0 longinverted-radius1"
+          className="w-full h-[350px] md:h-[530px] object-cover rounded-[30px] relative z-0 mask-inverted-radius"
           src={BannerBg.src}
           width="1200"
           height="300"
@@ -26,7 +26,7 @@ const PageBanner = ({ sectionData }) => {
 
       <style>
         {`
-  .longinverted-radius1 {
+  .mask-inverted-radius{
       --r: 32px;
       --s: 24px;
       --x: 180px;

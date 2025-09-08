@@ -15,13 +15,13 @@ body {
 
 
 .zyntics-container-auto {
-  @apply mx-auto w-full max-w-[1400px] xl:max-w-[1420px] py-5 px-3 md:px-6 lg:px-6 xl:px-2;
+  @apply mx-auto w-full max-w-[1024px] xl:max-w-[1420px] 2xl:max-w-[1920px] py-5 px-3 md:px-6 lg:px-6 xl:px-5 2xl:px-12;
 }
 .zyntics-container {
   @apply !flex !justify-center items-center mx-auto px-10;
 }
 .zyntics-section {
-  @apply py-16 space-y-4 px-4;
+  @apply py-16 space-y-4 ;
 }
 
 

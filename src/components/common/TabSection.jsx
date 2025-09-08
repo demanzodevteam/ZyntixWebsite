@@ -7,7 +7,7 @@ const TabSection = () => {
   );
 
   return (
-    <section className="max-w-[1400px] mx-auto zyntics-section ">
+    <section className="max-w-[1300px] 2xl:max-w-[1600px] mx-auto zyntics-section ">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 bg-[#F9FCFF] rounded-lg py-6 px-1 md:px-10">
         {/* Left Column */}
         <div className="flex flex-col relative items-start">
@@ -26,7 +26,7 @@ const TabSection = () => {
           </p>
 
           {/* Pass image setter to tab */}
-          <TabSelection onImageChange={setCurrentImage} client:load/>
+          <TabSelection onImageChange={setCurrentImage} client:load />
         </div>
 
         {/* Right Column - Image updates with tab */}

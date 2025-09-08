@@ -50,9 +50,9 @@ const Navbar = () => {
   return (
     <nav
       id="main-navbar"
-      className="w-full bg-white z-50 transition-all duration-300 ease-in-out transform"
+      className="w-full bg-white z-50 transition-all duration-300 ease-in-out transform 2xl:px-12"
     >
-      <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 lg:py-4 border border-gray-300 rounded-2xl mt-2" >
+      <div className="max-w-[1420px] 2xl:max-w-[1420px] mx-auto px-4 sm:px-6 lg:px-8 lg:py-4 border border-gray-300 rounded-2xl mt-2">
         <div className="flex items-center justify-between h-16">
           {/* Left: Logo */}
           <div className="flex-shrink-0 transform transition-transform duration-300 ease-in-out hover:scale-110">

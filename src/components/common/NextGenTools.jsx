@@ -36,7 +36,7 @@ export default function NextGenTools() {
 
   return (
     <section className="zyntics-section zyntics-container-auto" >
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-[1300px] mx-auto px-6">
         <div className="max-w-md">
           <h1 className="text-h4 font-bold leading-tight">
             Driving Innovation with

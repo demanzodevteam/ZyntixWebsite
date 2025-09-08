@@ -1,45 +1,95 @@
 ---
-import WhatWeOffer from "../../../common/WhatWeOffer.jsx";
+import TechFeatures from "../../../common/TechFeatures.jsx";
 
-const content = {
-  blockLabel: "Finance",
-  blockHeading: `Expert guidance\nensuring\nfinancial stability`,
-  topImage: "https://storage.googleapis.com/a1aa/image/b2c6db50-1c0f-4f0d-a22e-a50c23ab720d.jpg",
-  bottomImage: "https://storage.googleapis.com/a1aa/image/2d090bd9-8a13-44a4-a006-2d6d75de6e7f.jpg",
-  label: "Nurturing success",
-  title: "WHAT WE DELIVER",
-  description: [
-    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Sed ut perspiciatis unde omnis iste.",
-    "Sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Sed ut perspiciatis unde omnis iste.",
-  ],
-  features: [
+const features = {
+  title: "How we Build",
+  
+  items: [
     {
-      icon: "fas fa-clock",
+      icon: "fas fa-mobile-alt",
       title: "Flutter & React Native Development ",
       description: "Cross-platform apps built using Flutter and React Native—ensuring fast development, native performance, and unified codebases for both iOS and Android",
     },
     {
-      icon: "fas fa-chart-bar",
+      icon: "fas fa-network-wired",
       title: "Enterprise Mobility Solutions ",
       description: "Scalable mobile apps that integrate seamlessly with your internal systems, APIs, and enterprise workflows",
     },
     {
-      icon: "fas fa-dollar-sign",
+      icon: "fas fa-pencil-ruler",
       title: "UI/UX Design for Mobile ",
       description: "Clean, intuitive interfaces optimized for performance, responsiveness, and user engagement",
     },
     {
-      icon: "fas fa-dollar-sign",
+      icon: "fas fa-sync-alt",
       title: "App Maintenance & Feature Upgrades ",
       description: "Post-launch support covering bug fixes, OS updates, new feature rollouts, and performance tuning",
     },
     {
-      icon: "fas fa-dollar-sign",
+      icon: "fas fa-file-alt",
       title: "Landing Pages & Microsites",
       description: "Campaign-specific pages designed to drive maximum engagement and lead generation.",
     },
-  ]
+  ],
 };
 ---
 
-<WhatWeOffer content={content} client:visible />
+<TechFeatures features={features} />
+
+<!-- ---
+import TechFeatures from "../../../common/TechFeatures.jsx";
+
+const features = {
+  title: "How we Build",
+  
+  items: [
+    {
+      imageSrc:"https://storage.googleapis.com/a1aa/image/049b42c5-d8cc-4e87-7b77-f0e82d82aef4.jpg",
+      title: "Product Discovery & Roadmapping  ",
+      points: [
+        "Define core features",
+        "Platform Choices",
+        "Integration needs",
+      ],
+    },
+    {
+      imageSrc:"https://storage.googleapis.com/a1aa/image/17525cc6-d441-4d72-083b-2f6ec354adaa.jpg",
+      title: "Wireframing & UI Design  ",
+      points: [
+         "Build user flows and screen designs focused on speed, clarity, and consistency ",
+       
+      ],
+    },
+    {
+       imageSrc:
+      "https://storage.googleapis.com/a1aa/image/ba7acab1-8462-49cd-91a4-2e4239998b5b.jpg",
+      title: "Agile Development ",
+      points: [
+        "Develop iteratively using clean, scalable code across frontend and backend",
+   
+      ],
+    },
+    {
+      imageSrc:"https://storage.googleapis.com/a1aa/image/17525cc6-d441-4d72-083b-2f6ec354adaa.jpg",
+      title: " Quality Testing  ",
+      points: [
+        "Ensure functionality",
+        "Device compatibility",
+        "Performance",
+        "Compliance",
+      ],
+    },
+    {
+       imageSrc:
+      "https://storage.googleapis.com/a1aa/image/ba7acab1-8462-49cd-91a4-2e4239998b5b.jpg",
+      title: "Deployment & Support   ",
+      points: [
+        "Publish to the App Store and Google Play, with post-launch monitoring and upgrades",
+      ],
+    },
+  ],
+};
+---
+
+<TechFeatures features={features} />
+ -->

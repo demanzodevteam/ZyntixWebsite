@@ -1,10 +1,18 @@
 ---
-import TechFeatures from "../../../common/TechFeatures.jsx";
+import WhatWeOffer from "../../../common/WhatWeOffer.jsx";
 
-const features = {
-  title: "How we Build",
-  
-  items: [
+const content = {
+  blockLabel: "Finance",
+  blockHeading: `Expert guidance\nensuring\nfinancial stability`,
+  topImage: "https://storage.googleapis.com/a1aa/image/b2c6db50-1c0f-4f0d-a22e-a50c23ab720d.jpg",
+  bottomImage: "https://storage.googleapis.com/a1aa/image/2d090bd9-8a13-44a4-a006-2d6d75de6e7f.jpg",
+  label: "Nurturing success",
+  title: "WHAT WE DELIVER",
+  description: [
+    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Sed ut perspiciatis unde omnis iste.",
+    "Sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Sed ut perspiciatis unde omnis iste.",
+  ],
+  features: [
     {
       imageSrc:"https://storage.googleapis.com/a1aa/image/049b42c5-d8cc-4e87-7b77-f0e82d82aef4.jpg",
       title: "Product Discovery & Roadmapping  ",
@@ -49,9 +57,8 @@ const features = {
         "Publish to the App Store and Google Play, with post-launch monitoring and upgrades",
       ],
     },
-  ],
+  ]
 };
 ---
 
-<TechFeatures features={features} />
-
+<WhatWeOffer content={content} client:visible />

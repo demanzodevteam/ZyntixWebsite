@@ -115,7 +115,7 @@ const CardAnimated = ({ sectionData }) => {
               [insights]
             </p>
             <h1 className="font-semibold text-h2 leading-relaxed">
-              How We Build
+              How We Build the Latest
             </h1>
           </div>
           <div className="flex justify-start md:justify-end">

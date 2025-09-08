@@ -1,45 +1,103 @@
 ---
-import WhatWeOffer from "../../../common/WhatWeOffer.jsx";
+import TechFeatures from "../../../common/TechFeatures.jsx";
 
-const content = {
-  blockLabel: "Finance",
-  blockHeading: `Expert guidance\nensuring\nfinancial stability`,
-  topImage: "https://storage.googleapis.com/a1aa/image/b2c6db50-1c0f-4f0d-a22e-a50c23ab720d.jpg",
-  bottomImage: "https://storage.googleapis.com/a1aa/image/2d090bd9-8a13-44a4-a006-2d6d75de6e7f.jpg",
-  label: "Nurturing success",
-  title: "WHAT WE DELIVER",
-  description: [
-    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Sed ut perspiciatis unde omnis iste.",
-    "Sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Sed ut perspiciatis unde omnis iste.",
-  ],
-  features: [
+const features = {
+  title: "How We Build",
+  
+  items: [
     {
-      icon: "fas fa-clock",
+      icon: "fas fa-code",
       title: "Custom Website Development",
       description: "End-to-end development tailored to your business model, branding, and performance needs.",
     },
     {
-      icon: "fas fa-chart-bar",
+      icon: "fas fa-project-diagram",
       title: "CMS & Headless CMS Builds",
       description: "Flexible content systems using WordPress, Webflow, Strapi, or Sanity, optimized for speed and ease of management.",
     },
     {
-      icon: "fas fa-dollar-sign",
+      icon: "fas fa-th-large",
       title: "Web Application Interfaces",
       description: "User-focused frontend experiences for dashboards, customer portals, and internal tools.",
     },
     {
-      icon: "fas fa-dollar-sign",
+      icon: "fas fa-sync-alt",
       title: "Website Redesign & Optimization",
       description: "Transform underperforming or outdated websites into fast, conversion-ready digital assets.",
     },
     {
-      icon: "fas fa-dollar-sign",
+      icon: "fas fa-bullhorn",
       title: "Landing Pages & Microsites",
       description: "Campaign-specific pages designed to drive maximum engagement and lead generation.",
     },
-  ]
+  ],
 };
 ---
 
-<WhatWeOffer content={content} client:visible />
+<TechFeatures features={features} />
+
+
+
+
+<!-- ---
+import TechFeatures from "../../../common/TechFeatures.jsx";
+
+const features = {
+  title: "How we Build",
+  
+  items: [
+    {
+      imageSrc:"https://storage.googleapis.com/a1aa/image/049b42c5-d8cc-4e87-7b77-f0e82d82aef4.jpg",
+      title: "Discovery & Planning ",
+      points: [
+        "We align your business goals",
+        "Audience needs",
+        "Performance targets",
+      ],
+    },
+    {
+      imageSrc:"https://storage.googleapis.com/a1aa/image/17525cc6-d441-4d72-083b-2f6ec354adaa.jpg",
+      title: "UX/UI Design ",
+      points: [
+         "Clear wireframes ",
+        "Modern layouts crafted for usability",
+        "Accessibility",
+        "Conversion",
+      ],
+    },
+    {
+       imageSrc:
+      "https://storage.googleapis.com/a1aa/image/ba7acab1-8462-49cd-91a4-2e4239998b5b.jpg",
+      title: "Development ",
+      points: [
+        "Clean",
+        "Modular frontend ",
+        "Backend code built for speed and scalability",
+      ],
+    },
+    {
+      imageSrc:"https://storage.googleapis.com/a1aa/image/17525cc6-d441-4d72-083b-2f6ec354adaa.jpg",
+      title: "Testing & Optimization  ",
+      points: [
+        "Comprehensive interpretation and reporting",
+        "Devices",
+        "Hands-on training for inventory techniques",
+        "Workshops on emerging technologies",
+      ],
+    },
+    {
+       imageSrc:
+      "https://storage.googleapis.com/a1aa/image/ba7acab1-8462-49cd-91a4-2e4239998b5b.jpg",
+      title: "Launch & Support  ",
+      points: [
+        "Synthesis of specialized compounds and reagents",
+        "Tailored solutions for specific research needs",
+        "Advanced data analysis services",
+        "Comprehensive interpretation and reporting",
+      ],
+    },
+  ],
+};
+---
+
+<TechFeatures features={features} /> -->

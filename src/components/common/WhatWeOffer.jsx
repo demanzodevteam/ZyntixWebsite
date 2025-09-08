@@ -60,15 +60,23 @@ const WhatWeOffer = ({ content }) => {
                   key={index}
                   className="flex flex-col items-start space-x-4 space-y-2 max-w-md"
                 >
-                  <div className="flex-shrink-0 mt-1 text-[#4F57E3]">
-                    <i className={`${item.icon} fa-lg`} />
-                  </div>
+                  <div className="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-tr from-blue-400 to-purple-500 text-white mb-3">
+                {item.imageSrc ? (
+                  <img
+                    src={item.imageSrc}
+                    alt={`${item.title} icon`}
+                    className="w-6 h-6 object-contain"
+                  />
+                ) : null}
+              </div>
                   <h3 className="font-semibold text-gray-900 zyntics-h6">
                     {item.title}
                   </h3>
-                  <p className="zyntics-small-p text-gray-600">
-                    {item.description}
-                  </p>
+                  <ul className="list-disc list-inside text-gray-600 text-sm space-y-1">
+                {item.points.map((point, pointIdx) => (
+                  <li key={pointIdx}>{point}</li>
+                ))}
+              </ul>
                 </div>
               ))}
             </div>

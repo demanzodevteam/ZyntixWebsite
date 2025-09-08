@@ -3,16 +3,16 @@ import BannerBg from "../../assets/bannerbg.jpg";
 
 const PageBanner = ({ sectionData }) => {
   return (
-    <section className="zyntics-container-auto !pb-16 relative">
+    <section className="zyntics-container-auto !pb-[50px] relative">
       <div className="relative overflow-hidden rounded-[30px] flex items-center justify-center border border-gray-300 ">
         <img
           alt="BannerBg"
-          className="w-full h-[350px] md:h-[530px] object-cover rounded-[30px] relative z-0 mask-inverted-radius"
+          className="w-full h-[250px] md:h-[400px] object-cover rounded-[30px] relative z-0 mask-inverted-radius"
           src={BannerBg.src}
           width="1200"
           height="300"
         />
-        <h1 className="absolute z-20 text-white text-2xl md:text-5xl font-semibold select-none">
+        <h1 className="absolute z-20 top-20 md:top-36 text-white text-2xl md:text-5xl font-semibold select-none">
           {sectionData?.title}
         </h1>
       </div>

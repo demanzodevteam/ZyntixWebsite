@@ -52,7 +52,7 @@ const Navbar = () => {
       id="main-navbar"
       className="w-full bg-white z-50 transition-all duration-300 ease-in-out transform"
     >
-      <div className="max-w-[1450px] mx-auto px-4 sm:px-6 lg:px-8 lg:py-4 border border-gray-300 rounded-2xl mt-2" >
+      <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 lg:py-4 border border-gray-300 rounded-2xl mt-2" >
         <div className="flex items-center justify-between h-16">
           {/* Left: Logo */}
           <div className="flex-shrink-0 transform transition-transform duration-300 ease-in-out hover:scale-110">
@@ -69,31 +69,31 @@ const Navbar = () => {
           <div className="hidden xl:flex space-x-6">
             <a
               href="#"
-              className="font-medium hover:underline hover:underline-offset-4 hover:decoration-black"
+              className="font-semibold hover:underline hover:underline-offset-4 hover:decoration-black"
             >
               Home
             </a>
             <a
               href="#"
-              className="font-medium hover:underline hover:underline-offset-4 hover:decoration-black"
+              className="font-semibold hover:underline hover:underline-offset-4 hover:decoration-black"
             >
               Pages
             </a>
             <a
               href="#"
-              className="font-medium hover:underline hover:underline-offset-4 hover:decoration-black"
+              className="font-semibold hover:underline hover:underline-offset-4 hover:decoration-black"
             >
               Portfolio
             </a>
             <a
               href="#"
-              className="font-medium hover:underline hover:underline-offset-4 hover:decoration-black"
+              className="font-semibold hover:underline hover:underline-offset-4 hover:decoration-black"
             >
               Blog
             </a>
             <a
               href="#"
-              className="font-medium hover:underline hover:underline-offset-4 hover:decoration-black"
+              className="font-semibold hover:underline hover:underline-offset-4 hover:decoration-black"
             >
               Shop
             </a>

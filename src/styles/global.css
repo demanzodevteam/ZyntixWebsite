@@ -43,30 +43,79 @@ body {
 
 
 .text-h1 {
-  @apply text-[35px] md:text-[64px] lg:text-[80px];
+   @apply text-[clamp(35px,6vw,80px)];
 }
 .text-h2 {
-  @apply text-[26px] md:text-[38px] lg:text-[56px];
+  @apply text-[clamp(26px,3vw,56px)];
 }
+
 .text-h3 {
-  @apply text-[30px] sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px];
+  @apply text-[clamp(30px,2.5vw,48px)];
 }
+
 .text-h4 {
-  @apply text-[22px] sm:text-[26px] md:text-[30px] lg:text-[34px] xl:text-[38px];
+  @apply text-[clamp(22px,2vw,38px)];
 }
 
 .text-h5 {
-  @apply text-[22px] md:text-[32px] lg:text-[34px];
+  @apply text-[clamp(22px,1.8vw,34px)];
 }
 
 .text-h6 {
-  @apply text-[14px] sm:text-[15px] md:text-[16px] lg:text-[22px];
+  @apply text-[clamp(14px,1.5vw,22px)];
 }
 
 .text-p {
   @apply text-[16px] sm:text-[17px] md:text-[18px] lg:text-[19px];
 }
 
+.text-p {
+  @apply text-[clamp(16px,1.2vw,19px)];
+}
+
+.text-small-p {
+  @apply text-[14px]; /* same at all breakpoints */
+}
+
+.zyntics-h1 {
+  @apply text-[clamp(35px,5vw,80px)];
+  font-family: "DM Sans", sans-serif;
+}
+
+.zyntics-h2 {
+  @apply text-[clamp(34px,3.5vw,56px)];
+  font-family: "DM Sans", sans-serif;
+}
+
+.zyntics-h3 {
+  @apply text-[clamp(22px,2.5vw,34px)];
+  font-family: "DM Sans", sans-serif;
+}
+
+.zyntics-h4 {
+  @apply text-[clamp(26px,2vw,36px)];
+  font-family: "DM Sans", sans-serif;
+}
+
+.zyntics-h5 {
+  @apply text-[clamp(22px,2.2vw,34px)];
+  font-family: "DM Sans", sans-serif;
+}
+
+.zyntics-h6 {
+  @apply text-[clamp(18px,1.5vw,24px)];
+  font-family: "DM Sans", sans-serif;
+}
+
+.zyntics-p {
+  @apply text-[clamp(14px,1.2vw,18px)] text-[#676767];
+  font-family: "DM Sans", sans-serif;
+}
+
+.zyntics-small-p {
+  @apply text-[14px]; /* fixed size */
+}
+/* 
 .text-small-p {
   @apply text-[14px] md:text-[14px] lg:text-[14px];
 }
@@ -101,4 +150,4 @@ body {
 }
 .zyntics-small-p {
   @apply text-[14px] md:text-[14px] lg:text-[14px];
-}
+} */

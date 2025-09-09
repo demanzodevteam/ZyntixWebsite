@@ -1,5 +1,5 @@
 ---
-import FooterImg from '../../assets/footer-img.jpg'
+import FooterImg from "../../assets/footer-img.jpg";
 ---
 
 <div class="relative w-full">
@@ -10,56 +10,69 @@ import FooterImg from '../../assets/footer-img.jpg'
   <!-- <div class="absolute w-[80vw] max-w-[700px] h-[40vw] max-h-[300px] bg-[#D3DCFC] opacity-100 rounded-full blur-[100px] top-40 left-1/2 -translate-x-1/2 -translate-y-full z-0 "></div> -->
 </div>
 
-
-
 <!-- Footer Section -->
 <footer class="relative z-10">
-  
-  <div class="w-full px-4">
-    <div class="max-w-[1460px] mx-auto rounded-2xl overflow-hidden mb-10" style="box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.15)">
-      <!-- Top section with background image and text -->
-     <div class="relative rounded-t-2xl overflow-hidden">
-  <!-- Background Image -->
-  <img alt="Abstract" class="w-full aspect-[4/3.5] md:aspect-[5/1.5] lg:aspect-[6/2] object-cover" src={FooterImg.src} />
-
-  <!-- Content: Text and Button -->
-  <div
-    class="absolute inset-0 flex flex-col md:flex-row justify-between items-start lg:items-center px-6 lg:px-16 py-10 text-white"
-    style="font-feature-settings: 'liga' off"
-  >
-    <!-- Text Section -->
-    <div class="text-h3  leading-tight">
-      Elevate your business<br />
-      with our innovative<br />
-      solutions
-    </div>
-
-    <!-- Button Section -->
-    <button
-      aria-label="Get in touch"
-      class="w-30 h-40 border border-white rounded-full text-white text-small-p font-light flex items-center justify-center leading-tight"
-      style="font-feature-settings: 'liga' off"
+  <div class="w-full px-2">
+    <div
+      class="mx-auto rounded-2xl overflow-hidden mb-4"
+      style="box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.15)"
     >
-      Get in touch
-    </button>
-  </div>
-</div>
+      <!-- Top section with background image and text -->
+      <div class="relative rounded-t-2xl overflow-hidden">
+        <!-- Background Image -->
+        <img
+          alt="Abstract"
+          class="w-full aspect-[4/3.5] md:aspect-[5/1.5] lg:aspect-[6/2] object-cover"
+          src={FooterImg.src}
+        />
 
+        <!-- Content: Text and Button -->
+        <div
+          class="max-w-[1420px] mx-auto absolute inset-0 flex flex-col gap-6 md:gap-0 md:flex-row justify-between items-start lg:items-center px-6 lg:px-16 py-10 text-white"
+          style="font-feature-settings: 'liga' off"
+        >
+          <!-- Text Section -->
+          <div class="text-h3 leading-tight">
+            Elevate your business<br />
+            with our innovative<br />
+            solutions
+          </div>
+
+          <!-- Button Section -->
+          <button
+            aria-label="Get in touch"
+            class="w-30 h-40 border border-white rounded-full text-white text-small-p font-light flex items-center justify-center leading-tight"
+            style="font-feature-settings: 'liga' off"
+          >
+            Get in touch
+          </button>
+        </div>
+      </div>
 
       <!-- Bottom section -->
       <div
         class="bg-gradient-to-r from-[#0a0e13] via-[#121721] to-[#1a1c2a] text-white px-4 sm:px-6 md:px-8 lg:px-12 py-10 rounded-b-2xl"
         style="font-feature-settings: 'liga' off"
       >
-        <div class="flex flex-wrap gap-y-10 justify-between lg:justify-between">
+        <div class="max-w-[1420px] mx-auto flex flex-wrap gap-y-10 justify-between lg:justify-between">
           <!-- Column 1 -->
           <div class="flex flex-col gap-4 w-full sm:w-1/2 lg:w-auto">
-            <h2 class="font-extrabold text-3xl md:text-4xl leading-7 mb-2">Zyntics</h2>
+            <h2 class="font-extrabold text-3xl md:text-4xl leading-7 mb-2">
+              Zyntics
+            </h2>
             <div class="flex space-x-4 text-white text-xl">
-              <a aria-label="Facebook" class="hover:text-gray-400" href="#"><i class="fab fa-facebook-f"></i></a>
-              <a aria-label="Instagram" class="hover:text-gray-400" href="#"><i class="fab fa-instagram"></i></a>
-              <a aria-label="LinkedIn" class="hover:text-gray-400" href="#"><i class="fab fa-linkedin-in"></i></a>
-              <a aria-label="YouTube" class="hover:text-gray-400" href="#"><i class="fab fa-youtube"></i></a>
+              <a aria-label="Facebook" class="hover:text-gray-400" href="#"
+                ><i class="fab fa-facebook-f"></i></a
+              >
+              <a aria-label="Instagram" class="hover:text-gray-400" href="#"
+                ><i class="fab fa-instagram"></i></a
+              >
+              <a aria-label="LinkedIn" class="hover:text-gray-400" href="#"
+                ><i class="fab fa-linkedin-in"></i></a
+              >
+              <a aria-label="YouTube" class="hover:text-gray-400" href="#"
+                ><i class="fab fa-youtube"></i></a
+              >
             </div>
           </div>
 
@@ -98,7 +111,9 @@ import FooterImg from '../../assets/footer-img.jpg'
         </div>
 
         <!-- Bottom links -->
-        <div class="mt-10 grid grid-cols-2 gap-y-4 sm:flex sm:flex-wrap sm:justify-between text-sm font-light">
+        <div
+          class="max-w-[1420px] mx-auto mt-10 grid grid-cols-2 gap-y-4 sm:flex sm:flex-wrap sm:justify-between text-sm font-light"
+        >
           <span>Enterprise Solutions</span>
           <span>Intelligent E-Commerce</span>
           <span>Enterprise Transformation</span>
@@ -106,8 +121,10 @@ import FooterImg from '../../assets/footer-img.jpg'
         </div>
 
         <!-- Copyright -->
-        <div class="mt-8 flex flex-col sm:flex-row justify-between text-sm font-light gap-2 sm:gap-0">
-          <span>©Zyntics 2025. All rights reserved.</span>
+        <div
+          class="max-w-[1420px] mx-auto mt-8 flex flex-col sm:flex-row justify-between text-sm font-light gap-2 sm:gap-0"
+        >
+          <span>© <a href="https://zyntics.com">Zyntics</a> 2025. All rights reserved.</span>
           <span>
             Terms of use
             <span class="font-normal ml-2">Privacy Policy</span>
@@ -117,17 +134,16 @@ import FooterImg from '../../assets/footer-img.jpg'
     </div>
   </div>
 
-  	  <div class="fixed right-2 bottom-4 z-[9999]">
-
-
-  <!-- Scroll to Top Button -->
-  <button
-  aria-label="scroll to top"
-    id="scrollToTopBtn"
-    aria-label="Scroll to top"
-    class="bg-[#45D0BD] text-black text-xl p-3 rounded-full shadow-xl transition-all duration-400 hover:cursor-pointer hover:scale-110 animate-bounce pointer-events-none opacity-0 z-50 "
-  >
-    <span class="text-xl font-bold"><svg
+  <div class="fixed right-2 bottom-4 z-[9999]">
+    <!-- Scroll to Top Button -->
+    <button
+      aria-label="scroll to top"
+      id="scrollToTopBtn"
+      aria-label="Scroll to top"
+      class="bg-[#45D0BD] text-black text-xl p-3 rounded-full shadow-xl transition-all duration-400 hover:cursor-pointer hover:scale-110 animate-bounce pointer-events-none opacity-0 z-50"
+    >
+      <span class="text-xl font-bold"
+        ><svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
@@ -139,28 +155,27 @@ import FooterImg from '../../assets/footer-img.jpg'
           stroke-linejoin="round"
           class="lucide lucide-chevron-up"
         >
-          <path d="m18 15-6-6-6 6" />
-        </svg></span>
-  </button>
+          <path d="m18 15-6-6-6 6"></path>
+        </svg></span
+      >
+    </button>
   </div>
-<!-- Script for scroll to top button -->
-<script is:inline>
-  const scrollBtn = document.getElementById('scrollToTopBtn');
+  <!-- Script for scroll to top button -->
+  <script is:inline>
+    const scrollBtn = document.getElementById("scrollToTopBtn");
 
-  scrollBtn.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
+    scrollBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
 
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-      scrollBtn.classList.add('opacity-90', 'pointer-events-auto');
-      scrollBtn.classList.remove('opacity-0', 'pointer-events-none');
-    } else {
-      scrollBtn.classList.remove('opacity-90', 'pointer-events-auto');
-      scrollBtn.classList.add('opacity-0', 'pointer-events-none');
-    }
-  });
-</script>
-
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        scrollBtn.classList.add("opacity-90", "pointer-events-auto");
+        scrollBtn.classList.remove("opacity-0", "pointer-events-none");
+      } else {
+        scrollBtn.classList.remove("opacity-90", "pointer-events-auto");
+        scrollBtn.classList.add("opacity-0", "pointer-events-none");
+      }
+    });
+  </script>
 </footer>
-
